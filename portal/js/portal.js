@@ -27,9 +27,11 @@ function load() {
   }
 }
 function save() {
-  localStorage.setItem(KEY, JSON.stringify({
-    user: state.user, done: state.done, days: state.days, notes: state.notes
-  }));
+  try {
+    localStorage.setItem(KEY, JSON.stringify({
+      user: state.user, done: state.done, days: state.days, notes: state.notes
+    }));
+  } catch (e) {}
 }
 function esc(s) {
   return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
@@ -39,34 +41,30 @@ function $(id) { return document.getElementById(id); }
 function setError(msg) { $("login-error").textContent = msg || ""; }
 
 function bootLogin() {
-  document.querySelectorAll(".tab").forEach(tab => {
-    tab.onclick = () => {
-      document.querySelectorAll(".tab").forEach(t => t.classList.remove("on"));
-      tab.classList.add("on");
-      $("pane-email").classList.toggle("hidden", tab.dataset.tab !== "email");
-      $("pane-code").classList.toggle("hidden", tab.dataset.tab !== "code");
-      setError("");
-    };
-  });
   $("login-form").onsubmit = (e) => {
     e.preventDefault();
+    if (document.activeElement === $("code") && $("code").value.trim()) {
+      openWithCode();
+      return;
+    }
     const email = $("email").value.trim().toLowerCase();
-    const pass = $("pass").value;
+    const pass = $("pass").value.trim();
     const user = USERS[email];
     if (!user || user.password !== pass) {
-      setError("That email and password do not match the demo account.");
+      setError("That email and password do not match. The demo account is filled in, or use the access code below.");
       return;
     }
     enter({ name: user.name, email });
   };
-  $("code-btn").onclick = () => {
-    const code = $("code").value.trim().toUpperCase();
-    if (!CODES.includes(code)) {
-      setError("That code is not on the list. Check the note from your instructor.");
-      return;
-    }
-    enter({ name: "Student", email: "code@" + code.toLowerCase() });
-  };
+  $("code-btn").onclick = openWithCode;
+}
+function openWithCode() {
+  const code = $("code").value.trim().toUpperCase().replace(/\s+/g, "");
+  if (!CODES.includes(code)) {
+    setError("That code is not recognized. Use the code from your instructor, with no extra spaces.");
+    return;
+  }
+  enter({ name: "Student", email: "code@" + code.toLowerCase() });
 }
 
 function enter(user) {
@@ -134,7 +132,7 @@ function show(page) {
     if (page === "days") bindDays();
     if (page === "prompts") bindCopy();
   }
-  window.scrollTo(0, 0);
+  try { window.scrollTo(0, 0); } catch (e) {}
 }
 
 function homeView() {
@@ -172,7 +170,7 @@ function homeView() {
 function moduleView(m) {
   const note = state.notes[m.id] || "";
   const opts = m.check.options.map((o, i) =>
-    `<label class="mod"><input type="radio" name="q" value="${i}"> ${esc(o)}</label>`
+    `<label class="opt"><input type="radio" name="q" value="${i}"><span>${esc(o)}</span></label>`
   ).join("");
   const done = state.done.includes(m.id);
   return `
@@ -228,7 +226,7 @@ function bindModule(m) {
 function daysView() {
   const cards = DAYS.map(d => {
     const on = state.days.includes(d.n) ? " on" : "";
-    return `<label class="day${on}"><strong>Day ${d.n} · ${esc(d.skill)}</strong><br><span class="muted">${esc(d.job)}</span><br><input type="checkbox" data-day="${d.n}" ${on ? "checked" : ""}> Done</label>`;
+    return `<label class="day${on}"><input type="checkbox" data-day="${d.n}" ${on ? "checked" : ""}><span><strong>Day ${d.n} · ${esc(d.skill)}</strong><br><span class="muted">${esc(d.job)}</span></span></label>`;
   }).join("");
   return `
     <p class="kicker">After the modules</p>
@@ -303,7 +301,7 @@ function helpView() {
   `;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function start() {
   load();
   bootLogin();
   $("logout").onclick = () => {
@@ -313,13 +311,16 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   $("menu").onclick = () => $("side").classList.toggle("open");
   document.body.addEventListener("click", (e) => {
-    if (e.target.id === "go-next") {
+    if (e.target.closest("input, textarea, a")) return;
+    if (e.target.id === "go-next" || e.target.closest("#go-next")) {
       const next = MODULES.find(m => !state.done.includes(m.id)) || MODULES[0];
       show("m" + next.id);
       return;
     }
     const go = e.target.closest("[data-go]");
-    if (go) show(go.dataset.go);
+    if (go && $("app") && !$("app").classList.contains("hidden")) show(go.dataset.go);
   });
   if (state.user) enter(state.user);
-});
+}
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+else start();

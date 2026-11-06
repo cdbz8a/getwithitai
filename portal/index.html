@@ -11,37 +11,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/portal.css?v=4">
 </head>
 <body>
-  <div id="login" class="login-wrap">
-    <form class="login-card" id="login-form">
+  <div id="login" class="gate">
+    <section class="gate-copy">
       <a class="logo" href="https://getwithitai.com">
-        <img src="assets/logo.svg" width="36" height="36" alt="">
+        <img src="assets/logo.svg" width="40" height="40" alt="">
         <span>GetWithItAI<span class="dot">.</span></span>
       </a>
-      <h1>Student portal</h1>
-      <p class="lead">The 18 modules from the site, with practice on your own work.</p>
-      <div class="tabs" role="tablist">
-        <button type="button" class="tab on" data-tab="email">Email</button>
-        <button type="button" class="tab" data-tab="code">Access code</button>
+      <p class="eyebrow">AI Hero Academy</p>
+      <h1>Learn to use AI on the work <span class="mark">you already do.</span></h1>
+      <p class="lead">Eighteen modules, about 20 minutes each. You practice on your own emails, notes, and reports. Same course as the website.</p>
+      <ul class="points">
+        <li><strong>18 modules</strong> in four blocks, from a task list to a daily habit.</li>
+        <li><strong>18 practice days</strong> after that, one short skill on real work.</li>
+        <li><strong>Your notes stay here</strong> in this browser. Nothing is sent to a server.</li>
+      </ul>
+      <div class="chat gate-chat">
+        <div class="chat-title">A prompt from module 10</div>
+        <div class="bubble you"><span class="who">You</span>Write a short reply. Reader: my manager. Tone: calm and direct. Thank them, explain the delay, end with Friday the 14th. Here is the email: [paste it]</div>
+        <div class="bubble ai"><span class="who">Draft</span>Thanks for raising this. The materials arrived four days late, and that pushed the schedule. The new date is Friday the 14th. I will send an update the day before.</div>
       </div>
-      <div id="pane-email">
+    </section>
+    <section class="gate-panel">
+      <form class="gate-card" id="login-form" action="#">
+        <h2>Sign in</h2>
+        <p class="hint">The demo account is filled in. Or use the code from your instructor.</p>
         <label for="email">Email</label>
-        <input id="email" type="email" autocomplete="username" value="demo@getwithitai.com">
+        <input id="email" type="email" autocomplete="username" value="demo@getwithitai.com" required>
         <label for="pass">Password</label>
-        <input id="pass" type="password" autocomplete="current-password" value="DemoHero123">
+        <input id="pass" type="password" autocomplete="current-password" value="DemoHero123" required>
         <button class="btn" type="submit">Sign in</button>
-        <p class="hint">Demo account is filled in. Your progress stays in this browser.</p>
-      </div>
-      <div id="pane-code" class="hidden">
+        <p class="or"><span>or a class code</span></p>
         <label for="code">Access code</label>
-        <input id="code" type="text" autocomplete="off" placeholder="Code from your instructor">
-        <button class="btn" id="code-btn" type="button">Open the course</button>
-      </div>
-      <p id="login-error" class="error" role="alert"></p>
-      <p class="hint">Questions: <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a></p>
-    </form>
+        <input id="code" type="text" autocomplete="off" spellcheck="false" placeholder="Code from your instructor">
+        <button class="btn line" id="code-btn" type="button">Open with code</button>
+        <p id="login-error" class="error" role="alert"></p>
+        <p class="hint">Questions: <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a></p>
+      </form>
+    </section>
   </div>
 
   <div id="app" class="app hidden">
@@ -73,6 +82,6 @@
       <div id="view"></div>
     </div>
   </div>
-  <script src="js/portal.js"></script>
+  <script src="js/portal.js?v=4"></script>
 </body>
 </html>
