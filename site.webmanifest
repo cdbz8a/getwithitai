@@ -1,0 +1,21 @@
+{
+  "name": "GetWithItAI",
+  "short_name": "GetWithItAI",
+  "description": "Practical AI training for office workers and everyday people.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0E4F5C",
+  "icons": [
+    {
+      "src": "assets/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

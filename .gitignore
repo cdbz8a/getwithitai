@@ -1,0 +1,13 @@
+# Secrets — never commit real classroom codes
+classroom/private/config.php
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Local packaging
+*.zip
+getwithitai-hostinger*.zip

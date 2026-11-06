@@ -1,0 +1,720 @@
+{
+ "title": "AI Hero Academy",
+ "parts": [
+  {
+   "num": 1,
+   "title": "Get your bearings",
+   "modules": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Pick your tools",
+   "modules": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Ask like a pro",
+   "modules": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Real work",
+   "modules": [
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Make it stick",
+   "modules": [
+    18
+   ]
+  }
+ ],
+ "modules": [
+  {
+   "num": 1,
+   "title": "Task Harvest",
+   "minutes": 15,
+   "goal": "Leave this module with three real jobs from your week that you'll work on all day.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Today runs on your own work",
+     "b": "Every exercise today uses something from your actual job. The people in leadership and management carry the heaviest inbox in any organization, and the most decisions. You're the ones who stand to save the most time today, and when staff see leadership using these tools well, the whole office follows.",
+     "n": "Introduce yourself and the second instructor. Keep it under two minutes. Ask people to log in to the classroom on their phone and tap Follow instructor."
+    },
+    {
+     "t": "do",
+     "h": "List your time-wasters",
+     "b": "Take three minutes. Write down every task from the last two weeks that felt slow, boring, or repetitive. Don't filter. Emails, forms, notices, minutes, spreadsheets, reports, posts, schedules, all of it.",
+     "n": "Walk the room. People get stuck at three items. Prompt them: what did you copy and paste this week? What did you write twice?"
+    },
+    {
+     "t": "do",
+     "h": "Circle your top three",
+     "b": "From your list, circle the three that eat the most time or annoy you the most. These are your three jobs for today. Write them at the top of your workbook page."
+    },
+    {
+     "t": "try",
+     "h": "Let AI sort the rest",
+     "b": "Paste in your full list and see what comes back.",
+     "p": "Here's a list of tasks from my job: [paste your list]. Sort them into three groups: tasks AI can mostly do for me, tasks AI can help me speed up, and tasks that need me. Give one line of reasoning for each."
+    },
+    {
+     "t": "talk",
+     "h": "Hold onto that list",
+     "b": "You'll come back to it in Module 18 when you build your 28-day plan. By the end of today, every job on your top three should have a prompt that handles it."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "What AI Actually Is",
+   "minutes": 20,
+   "goal": "Explain in plain words how AI chat tools work, and where they're strong and weak.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "A prediction machine",
+     "b": "AI chat tools like ChatGPT and Claude are large language models. They learned patterns from a huge amount of written text, and when you type something, they predict what words should come next. They're very good at language: drafting, rewording, summarizing, explaining, organizing. They're weaker at exact facts they haven't been given, current events unless they search, and anything that needs to be precisely right without checking."
+    },
+    {
+     "t": "talk",
+     "h": "Why now",
+     "b": "Statistics Canada tracks this. In the second quarter of 2026, 19.2% of Canadian businesses said they were using AI to produce goods or deliver services, up from 6.1% two years earlier. Rural businesses were at 9.9% while urban businesses were at 21.0%. That gap is the opportunity. The people in smaller communities who learn this now get ahead of it.",
+     "n": "Source: Statistics Canada, Analysis on artificial intelligence use by businesses in Canada, Q2 2026, released June 11, 2026."
+    },
+    {
+     "t": "try",
+     "h": "Stump the Machine",
+     "b": "As a room, invent the strangest specific request you can. Then watch it try.",
+     "p": "Write a short safety briefing for a crew of beavers who are about to start work on a hydro dam, in the style of a pre-job hazard assessment. Include PPE, hazards, and controls.",
+     "n": "Let the room shout out their own odd request and type that one instead. The point is that it handles requests nobody has ever written before, because it's generating language from patterns."
+    },
+    {
+     "t": "talk",
+     "h": "What that tells you",
+     "b": "Nobody has ever written that before, and it still produced something that holds together. That's generation. It builds new text from patterns. Keep that in mind all day: it's brilliant at producing words and needs you to supply the facts and the judgment."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "Is an AI chat tool a search engine?",
+     "a": "By default it generates answers from patterns it learned. Some tools can also search the web, and when they do they usually show sources you can click."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Catch the Mistakes",
+   "minutes": 20,
+   "goal": "Spot hallucinations and stop them before they spread.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Hallucinations",
+     "b": "When AI makes something up and states it like fact, that's called a hallucination. Fake quotes, fake laws, fake statistics, fake book titles, wrong phone numbers. It's predicting what a good answer would look like, and sometimes that prediction is wrong."
+    },
+    {
+     "t": "try",
+     "h": "Spot the fake",
+     "b": "Ask for something specific it probably can't know, then ask it to show its work.",
+     "p": "Give me the exact attendance number and three direct quotes from the official report of last spring's regional leadership gathering, with the page number for each quote."
+    },
+    {
+     "t": "try",
+     "h": "Now make it come clean",
+     "b": "",
+     "p": "Were those real quotes from real documents you can link me to? If not, say so plainly."
+    },
+    {
+     "t": "talk",
+     "h": "Hallucination chains",
+     "b": "Here's the real danger. Someone pastes an AI answer into a report without checking. Someone else quotes the report. Now a made-up number is in three documents and an email to leadership. You break the chain by checking before anything leaves your hands. Names, numbers, dates, quotes, laws, and prices always get verified at the source."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "AI tells you a law says something specific. Where do you check it?",
+     "a": "On the government's official legislation website, reading the actual section. For federal laws in Canada that's laws-lois.justice.gc.ca."
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "The Responsibility Code",
+   "minutes": 20,
+   "goal": "Use AI in a way you'd be comfortable defending to your boss, your community, and yourself.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Four rules we use",
+     "b": "- You're the author. If your name is on it, you've read it, checked it, and you stand behind it.\n- Never pass along unchecked AI content. That goes for coworkers, managers, and the public alike.\n- Protect people's information. Placeholders go in, real details stay on your computer.\n- Be honest when it matters. If someone asks whether AI helped, tell them."
+    },
+    {
+     "t": "talk",
+     "h": "What stays out of public AI tools",
+     "b": "- Names tied to health, money, housing, or family matters\n- ID card numbers, SINs, bank and account numbers\n- Passwords and login codes\n- Anything labelled confidential, and anything leadership hasn't approved for release\nIf your workplace sets up an approved business version, follow its rules. Until then, assume the free tools are public."
+    },
+    {
+     "t": "try",
+     "h": "Practice the placeholder swap",
+     "b": "",
+     "p": "Write a letter from the property office to [TENANT NAME] at [UNIT NUMBER] confirming that their repair request for [REPAIR] has been approved and will be scheduled within [TIMEFRAME]. Keep it friendly and plain, under 150 words."
+    },
+    {
+     "t": "do",
+     "h": "Write your own one-line rule",
+     "b": "In your workbook, finish this sentence in your own words: \"Before I use anything AI wrote, I will...\" That's your personal policy. Keep it somewhere you'll see it.",
+     "n": "Ask two or three people to read theirs out. It gets the room thinking about their own workplace."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Choosing Your Toolkit",
+   "minutes": 25,
+   "goal": "Know which tool to reach for, and set up your free accounts.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "The main tools, fall 2026",
+     "b": "- ChatGPT (OpenAI): the all-rounder. Free plan, paid plans from about US$8 to US$20 a month for most people.\n- Claude (Anthropic): strong writer and careful with documents. Has a desktop app for Mac, Windows, and Linux.\n- Gemini (Google): built into Gmail, Docs, and Android. Free, with paid plans at US$4.99 and US$19.99 a month.\n- Copilot (Microsoft): built into Windows, Edge, and Microsoft 365 work accounts.\n- Grok (xAI): built into X, strongest on what's happening right now.\n- Perplexity: answers with clickable sources, good for research.\nPrices are in US dollars and change often. Check the tool's own pricing page before you pay for anything.",
+     "n": "Sources for pricing as of October 2026: ChatGPT plan pages and coverage; 9to5Google, July 2026, for Gemini tiers. Say out loud that prices move and rankings shift monthly."
+    },
+    {
+     "t": "talk",
+     "h": "Pick by the job",
+     "b": "You don't need all of them. Most people do well with one main tool for writing and thinking, plus one for research with sources. If your workplace uses Microsoft, learn Copilot. If it runs on Google, learn Gemini. If you write a lot, try Claude. If you need to know what people are saying today, that's where Grok fits."
+    },
+    {
+     "t": "do",
+     "h": "Set up two accounts",
+     "b": "Create free accounts on two tools now if you haven't: your main tool and a second one to compare with. Use a personal email if your work email isn't approved for it.",
+     "n": "Have the second instructor help anyone stuck on account creation. Budget five minutes."
+    },
+    {
+     "t": "try",
+     "h": "Same prompt, two tools",
+     "b": "Send this to both tools and compare the answers side by side.",
+     "p": "I work in a small community office. Write a short notice for the bulletin board letting people know the office will close at noon on Friday for staff training, and that urgent calls should go to [PHONE]. Plain language, under 80 words."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "Which tool would you pick to find out what people are posting about a road closure right now?",
+     "a": "Grok, because it reads live posts on X, or Perplexity for news sources. Then confirm with the official road report or the local police."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "ChatGPT Hands-On",
+   "minutes": 20,
+   "goal": "Use ChatGPT's core features with confidence: chats, files, voice, and custom instructions.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "What's in the free plan",
+     "b": "As of fall 2026 the free ChatGPT plan includes regular chats, a Think option for harder questions, image generation, voice conversations, and file uploads, with limits on the heavier features. Paid plans raise the limits and unlock the stronger models and the full Deep Research tool.",
+     "n": "Source: ChatGPT pricing coverage, October 2026. Show the plan picker on screen but don't push upgrades."
+    },
+    {
+     "t": "try",
+     "h": "Upload and ask",
+     "b": "Upload a document you're allowed to share, like a public funding guide, a policy, or a program report. Then ask about it.",
+     "p": "Read this document and give me the five things leadership needs to know before making a decision on it, in plain language. Then list any deadlines, dollar amounts, and commitments it asks us to make."
+    },
+    {
+     "t": "try",
+     "h": "Talk to it",
+     "b": "Tap the voice button and say this out loud. Voice is great when you're driving, walking, or your hands are busy.",
+     "p": "I have a meeting tomorrow with a funding partner about a project that's behind schedule. Help me plan what to say in under two minutes, including how to explain the delay and what we need from them."
+    },
+    {
+     "t": "talk",
+     "h": "Custom instructions",
+     "b": "In Settings, under Personalization, you can tell ChatGPT about yourself and how you like answers. It uses that in every chat. A few lines saves you repeating yourself all day."
+    },
+    {
+     "t": "try",
+     "h": "Write your custom instructions",
+     "b": "Ask it to draft them for you, then paste the result into your settings.",
+     "p": "Help me write custom instructions for you. I work as [your job] in [type of workplace]. I like answers that are [short/detailed], in plain language, with no corporate filler. Ask me questions one at a time until you have enough, then write the instructions."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Claude and Claude Desktop",
+   "minutes": 30,
+   "goal": "Use Claude for writing and documents, and know what the desktop app adds.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Where Claude shines",
+     "b": "Claude, made by Anthropic, is known for natural writing and for handling long documents carefully. It's a good pick for letters, policies, proposals, and anything where tone matters. It has a free plan at claude.ai, and paid plans for heavier use."
+    },
+    {
+     "t": "talk",
+     "h": "The desktop app",
+     "b": "Claude Desktop is a downloadable app for Mac and Windows, with a Linux beta that arrived in July 2026. Beyond regular chat, it can connect to apps and files you choose, and it has a Cowork area for longer tasks Claude works through while you do something else, plus a Code area for people who build software. You decide what it's allowed to touch.",
+     "n": "Source: Claude Desktop coverage, July 2026, including the Linux beta for Ubuntu 22.04+ and Debian 12+. Demo the app on the projector if you have it installed. Keep it to what office workers will use."
+    },
+    {
+     "t": "talk",
+     "h": "Projects keep your work together",
+     "b": "A Project is a folder for a piece of ongoing work. You can add reference documents and instructions once, and every chat inside that project uses them. Set one up for something you work on every month, like a community update, a funding report, or leadership meeting prep."
+    },
+    {
+     "t": "try",
+     "h": "Rewrite with care",
+     "b": "Paste a paragraph you wrote recently, like an email or a notice, and try this.",
+     "p": "Here's something I wrote: [paste it]. Make it clearer and friendlier without changing what I'm saying or making it longer. Then show me the three biggest changes you made and why."
+    },
+    {
+     "t": "try",
+     "h": "Build a project prompt",
+     "b": "Use this as the instructions for a new Project.",
+     "p": "You're helping me with [the ongoing work, e.g. monthly updates to the community]. My readers are [who]. Always write in plain language at about a grade 8 reading level, keep paragraphs short, never invent names, dates, or numbers, and ask me when something's missing."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "What's the difference between a regular chat and a Project?",
+     "a": "A Project keeps your documents and instructions in one place, so every chat inside it starts already knowing your context."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Grok and Real-Time Information",
+   "minutes": 20,
+   "goal": "Use Grok for what's happening right now, and know its risks.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "What Grok is",
+     "b": "Grok is made by xAI and is built into X, formerly Twitter. You can also use it at grok.com or in its own app. Its strength is reading live posts and news, so it can tell you what people are saying about something today. xAI released Grok 4.7 in September 2026. There's a free tier with limits, and a paid SuperGrok plan at about US$30 a month.",
+     "n": "Sources: Wikipedia's Grok article and October 2026 release coverage. Version numbers move fast; don't dwell on them."
+    },
+    {
+     "t": "try",
+     "h": "Ask about today",
+     "b": "Pick something happening this week that matters to your work or community.",
+     "p": "What are people saying today about [a local issue, road, wildfire, event, or news story]? Summarize the main points of view and link the posts or articles you're drawing from."
+    },
+    {
+     "t": "talk",
+     "h": "Be careful with it",
+     "b": "Live posts include rumours, jokes, and things that are flat-out wrong. Treat Grok's summary as a lead to follow, then confirm with an official source before you act on it or share it. Grok has also had public problems: in August 2025, shared Grok conversations showed up in Google search results because of how share links worked. Never put private information into it, and think twice before using the share button.",
+     "n": "Source: Wikipedia, Grok (chatbot), section on 2025 privacy incident. Keep this factual, no editorializing about the company."
+    },
+    {
+     "t": "talk",
+     "h": "Images of real people",
+     "b": "Grok and other tools can generate and edit images. Don't use any AI tool to create or edit pictures of real people without their permission. It can hurt people and it can get you in legal trouble."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "Grok says a highway is closed. What do you do before telling your crew?",
+     "a": "Confirm it with the official road report or the local police before anyone changes plans."
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Gemini, Copilot, and the Apps You Already Use",
+   "minutes": 20,
+   "goal": "Find the AI that's already inside your email, documents, and phone.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "AI where you already work",
+     "b": "Gemini is built into Google's apps: Gmail, Docs, Sheets, and Android phones. Copilot is built into Windows, the Edge browser, and Microsoft 365 for workplaces that turn it on. Using the one that matches your workplace means less copying and pasting between windows.",
+     "n": "Ask the room: who uses Outlook and Word at work? Who uses Gmail? Split the demo time by the answer."
+    },
+    {
+     "t": "try",
+     "h": "Gemini in Google",
+     "b": "If you use Gmail or Docs, open the Gemini side panel and try this on a long email thread or document.",
+     "p": "Summarize this thread in five bullet points. Then list what I'm being asked to do and by when."
+    },
+    {
+     "t": "try",
+     "h": "Copilot in Microsoft",
+     "b": "If your work account has Copilot in Word or Outlook, try the same idea there. If not, use copilot.microsoft.com.",
+     "p": "Draft a reply to this email confirming I can attend, asking for the agenda, and asking whether I should bring anything. Keep it short."
+    },
+    {
+     "t": "talk",
+     "h": "Your phone counts too",
+     "b": "Both Gemini and ChatGPT have phone apps with voice. A two-minute voice chat on the drive to work can plan your day, draft a reply, or prep you for a hard conversation."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "Your office runs on Outlook and Word. Which built-in AI should you learn first?",
+     "a": "Copilot, if your workplace has it enabled."
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "The 5-Element Prompt",
+   "minutes": 30,
+   "goal": "Write prompts that get a usable answer on the first try.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Role, Context, Task, Constraints, Examples",
+     "b": "- Role: who it should act as. \"You're an experienced executive assistant.\"\n- Context: the situation. Who it's for, what happened, what matters.\n- Task: the one thing you want, starting with a verb.\n- Constraints: length, tone, format, and what to avoid.\n- Examples: a sample of the style you want, or a good and bad example.\nThink of it as the briefing you'd give a smart new coworker on their first day."
+    },
+    {
+     "t": "try",
+     "h": "Before",
+     "b": "Send this weak version first and look at the result.",
+     "p": "Write a memo about the new office hours."
+    },
+    {
+     "t": "try",
+     "h": "After",
+     "b": "Now the full version. Compare.",
+     "p": "Role: You're an experienced executive assistant who writes clear, friendly notices.\nContext: Starting [DATE], the administration office will be open 8:30 to 4:30 Monday to Thursday and close at noon on Fridays for staff training. Urgent matters on Friday afternoons go to [PHONE].\nTask: Write a short notice for staff and the community explaining the change.\nConstraints: Under 120 words. Put the change in the first sentence. Plain language. No em dashes.\nExamples: Start like this: \"Starting Monday, the office will close at noon on Fridays.\""
+    },
+    {
+     "t": "try",
+     "h": "Your turn, on your own job",
+     "b": "Take the first of your three jobs from Module 1 and write a full 5-element prompt for it. Or open PromptForge on getwithitai.com and let it build the frame for you.",
+     "p": "Role: [who it should be]\nContext: [your situation]\nTask: [what you want, starting with a verb]\nConstraints: [length, tone, format, what to avoid]\nExamples: [a sample or a good and bad example]",
+     "n": "Give eight minutes. Ask two people to share their before and after on the projector."
+    },
+    {
+     "t": "do",
+     "h": "Save it",
+     "b": "Start a prompt library today. A note on your phone, a Word doc, or a Google Doc. Every prompt that works goes in there with a one-line label. This library is the most valuable thing you'll leave with."
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Steering the Answer",
+   "minutes": 20,
+   "goal": "Turn an okay first draft into a great one with follow-up messages.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Edit like a supervisor",
+     "b": "The first answer is a draft. Keep the chat going and tell it exactly what to change. It remembers the whole conversation, so short follow-ups work."
+    },
+    {
+     "t": "talk",
+     "h": "Follow-ups that work",
+     "b": "- \"Shorter. Keep the main point.\"\n- \"Make it sound like a person talking.\"\n- \"Give me three versions: formal, friendly, and very short.\"\n- \"What did you assume that I didn't tell you?\"\n- \"Turn that into a table.\"\n- \"Ask me questions before you try again.\""
+    },
+    {
+     "t": "try",
+     "h": "Run the gauntlet",
+     "b": "Take the notice from the last module and send these in order.",
+     "p": "Give me three versions of that notice: formal, friendly, and two sentences."
+    },
+    {
+     "t": "try",
+     "h": "Find the gaps",
+     "b": "",
+     "p": "What did you assume about my workplace that I never told you? List each assumption."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "The answer is close but too stiff. What's your next message?",
+     "a": "Something like: \"Make it sound more like a real person talking. Keep everything else.\""
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Make It Sound Like You",
+   "minutes": 25,
+   "goal": "Get AI writing that sounds human and sounds like you.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "The giveaways",
+     "b": "People can spot AI writing fast. Common tells:\n- Words like delve, robust, seamless, pivotal, tapestry, testament, and game-changer\n- Em dashes all over the place\n- Lists of exactly three things, over and over\n- Openers like \"In today's fast-paced world\"\n- Every sentence the same length\n- Praise for the question before answering it"
+    },
+    {
+     "t": "talk",
+     "h": "How to fix it",
+     "b": "Give it a sample of your real writing and tell it to match it. Ban the giveaway words by name. Ask for contractions, mixed sentence lengths, and a clear opinion. Then read it out loud. If you wouldn't say it, change it."
+    },
+    {
+     "t": "try",
+     "h": "Teach it your voice",
+     "b": "Paste two or three emails or posts you wrote yourself.",
+     "p": "Here are samples of my writing: [paste 2 or 3 samples]. Describe my style in five short points. Then rewrite the following in my style: [paste something AI wrote for you earlier]. Don't use em dashes, and avoid the words delve, robust, seamless, pivotal, and game-changer."
+    },
+    {
+     "t": "try",
+     "h": "Make it permanent",
+     "b": "Turn that style description into custom instructions or a Claude Project instruction.",
+     "p": "Turn the style description you just wrote into custom instructions I can save, so every future answer is written the way I write. Keep it under 150 words."
+    },
+    {
+     "t": "do",
+     "h": "The read-aloud test",
+     "b": "Read your final version out loud to the person next to you. If either of you winces, fix that line."
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Email and Messages",
+   "minutes": 25,
+   "goal": "Clear your inbox faster with replies that still sound like you.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "The email formula",
+     "b": "Good work email has the purpose in the first sentence, the details next, and one clear ask with a date at the end. Tell AI that every time and you'll rarely need to rewrite."
+    },
+    {
+     "t": "try",
+     "h": "The hard reply",
+     "b": "Pick an email you've been avoiding. Remove any private details first.",
+     "p": "Here's an email I need to reply to: [paste it, with names and private details removed]. I want to [your goal: say no politely / ask for more time / push back / agree with conditions]. Write a reply under 150 words. Purpose in the first sentence, one clear ask, friendly but firm."
+    },
+    {
+     "t": "try",
+     "h": "The tone check",
+     "b": "Before you send anything you wrote while frustrated:",
+     "p": "Read this email I wrote and tell me how it will come across to the person receiving it. Then suggest a calmer version that still makes my point: [paste your draft]"
+    },
+    {
+     "t": "try",
+     "h": "Speaking notes",
+     "b": "Leaders get asked to say a few words at short notice. This gets you ready in two minutes.",
+     "p": "Write speaking notes for a three-minute update at a community meeting about [topic]. Start with the most important news, use plain language, keep each point to one short line, and end by telling people how they can ask questions or get more information."
+    },
+    {
+     "t": "try",
+     "h": "Text and social messages",
+     "b": "",
+     "p": "Turn this into a short, friendly text message under 40 words: [paste the details]"
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "What goes in the first sentence of a work email?",
+     "a": "The purpose. What you want or why you're writing."
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Reports, Summaries, and Meetings",
+   "minutes": 25,
+   "goal": "Turn long documents and messy notes into clean summaries, briefings, and meeting notes.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Bottom line first",
+     "b": "Busy people read the top and skim the rest. Ask AI to lead with the conclusion, then the supporting points. Always tell it to use only what's in the source, and to flag anything unclear."
+    },
+    {
+     "t": "try",
+     "h": "Summarize a long document",
+     "b": "Use a public document like a funding agreement guide, a program report, or an annual report.",
+     "p": "Summarize this for a busy leadership team. Start with a two-sentence bottom line. Then list the key points, any deadlines, and any money figures. Use only what's in the document. Mark anything you're unsure about. [paste or upload the document]"
+    },
+    {
+     "t": "try",
+     "h": "Messy notes to clean meeting notes",
+     "b": "Type rough notes from a recent managers' or department meeting, shorthand and all.",
+     "p": "Turn these rough meeting notes into clean meeting notes with these sections: attendees, decisions made, action items with owner and due date, and items carried forward. Don't add anything that isn't in my notes. [paste notes]"
+    },
+    {
+     "t": "try",
+     "h": "A one-page briefing note",
+     "b": "Before a big decision, a one-page briefing note keeps everyone working from the same facts.",
+     "p": "Using only the information below, write a one-page briefing note for leadership with these headings: the issue, background, options, cost of each option, and a recommendation. Mark anything that needs to be confirmed. [paste the information]"
+    },
+    {
+     "t": "talk",
+     "h": "Recording meetings",
+     "b": "Some tools can transcribe a recorded meeting and summarize it. Only record when everyone in the meeting knows and agrees, and follow your workplace's rules. Confidential meetings and anything in camera stay off limits."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "What two instructions stop a summary from inventing things?",
+     "a": "\"Use only what's in the document\" and \"Mark anything you're unsure about.\""
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Research You Can Trust",
+   "minutes": 25,
+   "goal": "Use AI to research fast, with sources you've actually checked.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Tools that show their sources",
+     "b": "For research, use a tool that searches the web and links its sources: Perplexity, ChatGPT with search, Gemini, Claude with web search, or Grok for live news. Then click the links. A source you haven't opened is a source you haven't checked."
+    },
+    {
+     "t": "try",
+     "h": "The research sprint",
+     "b": "Pick a real question from your job, like a grant, a regulation, a program, or a supplier.",
+     "p": "Research this question: [your question]. Use only official or primary sources where possible, like government sites, legislation, and the organization's own pages. Give me a short answer, then the key facts, each with its source link. Tell me what you couldn't find."
+    },
+    {
+     "t": "try",
+     "h": "Pressure test it",
+     "b": "",
+     "p": "Which of those facts are you least sure about, and which source would settle it? Are any of these sources out of date?"
+    },
+    {
+     "t": "talk",
+     "h": "Deep research tools",
+     "b": "Several tools now offer a deep research mode that searches for several minutes and writes a full report. They're great for a first pass on a big topic. Treat the report as a starting draft and verify the facts that matter before they go in anything official."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "AI cites a funding program with a deadline. Where do you confirm the deadline?",
+     "a": "On the program's official page."
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Spreadsheets, Files, and Data",
+   "minutes": 25,
+   "goal": "Get formulas, clean-ups, and quick analysis without being a spreadsheet expert.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Describe your columns",
+     "b": "AI can't see your screen. Tell it what each column holds and give it a couple of example rows with fake data. Then ask for the exact formula and which cell it goes in."
+    },
+    {
+     "t": "try",
+     "h": "Get a formula",
+     "b": "",
+     "p": "I'm using [Excel / Google Sheets]. Column A has dates, column B has the department, column C has a description, and column D has the amount spent. I want a small table that shows the total spent by each department, and a cell that shows the total for October only. Give me the exact formulas and tell me which cells they go in."
+    },
+    {
+     "t": "try",
+     "h": "Clean up a messy list",
+     "b": "Use made-up or non-private data for practice.",
+     "p": "Here's a messy list: [paste list]. Clean it up into a table with consistent names, fix capitalization, remove duplicates, and tell me what you changed."
+    },
+    {
+     "t": "talk",
+     "h": "Uploading files",
+     "b": "ChatGPT, Claude, and Gemini can read uploaded spreadsheets and spot trends or make charts. Only upload files with no personal or confidential information, or remove those columns first."
+    },
+    {
+     "t": "check",
+     "h": "Quick check",
+     "b": "Why give example rows with fake data?",
+     "a": "So it understands your layout without you exposing real information."
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Images, Voice, and Automation",
+   "minutes": 20,
+   "goal": "See what else AI can do, and pick one thing worth trying next.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Images",
+     "b": "ChatGPT, Gemini, and Grok can make images from a description. They're handy for posters, slides, and social posts. Describe the subject, the style, the colours, and any text you need. Don't make images of real people, and never pass off an AI image as a real photo."
+    },
+    {
+     "t": "try",
+     "h": "Make a poster image",
+     "b": "",
+     "p": "Create a simple, bright poster image for a community fish fry at the lake on a Saturday afternoon. Picnic tables, a lake, and pine trees. Leave space at the top for a title. No text in the image."
+    },
+    {
+     "t": "talk",
+     "h": "Voice",
+     "b": "Voice modes let you talk it through out loud. Use them to rehearse a hard conversation, plan your day on the drive, or practise a presentation and ask for feedback."
+    },
+    {
+     "t": "talk",
+     "h": "Automation",
+     "b": "Tools like Zapier and Microsoft Power Automate can connect your apps so routine steps happen on their own, like saving every form submission to a spreadsheet and emailing you a summary. Claude Desktop and ChatGPT can also take on longer multi-step tasks. Start with one small, boring task that happens every week."
+    },
+    {
+     "t": "try",
+     "h": "Find your automation",
+     "b": "",
+     "p": "Here's a task I do every week: [describe it step by step]. Which steps could be automated, what tools could do it, and what's the simplest first version I could set up in under an hour?"
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Your 28-Day Plan",
+   "minutes": 25,
+   "goal": "Leave with a written 28-day plan and the prompts to carry it out.",
+   "panels": [
+    {
+     "t": "talk",
+     "h": "Why 28 days",
+     "b": "Four weeks is long enough to turn a new skill into a habit and short enough to stay focused. One small target each week. By day 28, AI is part of how you work and you'll have the time savings to show for it."
+    },
+    {
+     "t": "try",
+     "h": "Build the plan",
+     "b": "Use your three jobs from Module 1 and your prompt library.",
+     "p": "Help me build a 28-day plan for using AI at work. My job is [your job]. The three tasks I want AI to help with are: [job 1], [job 2], [job 3]. Make it four weeks, one focus per week, with a 10-minute daily practice and a simple way to track time saved. Keep it to one page."
+    },
+    {
+     "t": "do",
+     "h": "Week by week",
+     "b": "- Week 1: Use AI on job one every day. Save every prompt that works.\n- Week 2: Add job two. Write custom instructions so answers sound like you.\n- Week 3: Add job three. Show one coworker something you now do faster.\n- Week 4: Try one new thing from Module 17 and count your time saved."
+    },
+    {
+     "t": "do",
+     "h": "Tell someone",
+     "b": "Share your plan with one person who'll ask how it's going. Once you've said it out loud to someone, it's a lot harder to quietly drop. Write their name at the bottom of your plan."
+    },
+    {
+     "t": "talk",
+     "h": "You're done",
+     "b": "You came in with a list of time-wasters. You're leaving with a toolkit, a prompt library, and a 28-day plan. Leadership sets the tone for the whole workplace, so when your staff see you using these tools well and responsibly, they'll follow. Your classroom login stays open for 28 days so you can come back to any module. Questions later? Email getwithitai@protonmail.com.",
+     "n": "Hand out certificates. Take a group photo only with everyone's permission."
+    }
+   ]
+  }
+ ],
+ "totalMinutes": 410
+}
