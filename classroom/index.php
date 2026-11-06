@@ -16,14 +16,14 @@ unset($_SESSION['login_error']);
 <meta name="robots" content="noindex, nofollow">
 <title>AI Hero Academy Classroom</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="player.css">
 </head>
 <body>
 <?php if ($role === null): ?>
   <div class="login">
     <form method="post" action="login.php" autocomplete="off">
-      <a class="logo" href="/">GETWITHIT<b>AI</b></a>
+      <a class="logo" href="/"><img src="/assets/logo.svg" alt="">GetWithItAI<span class="dot">.</span></a>
       <h1>Classroom</h1>
       <p>Enter the class code your instructor gave you to follow along with today's session.</p>
       <?php if ($error): ?><p class="err" role="alert"><?= h($error) ?></p><?php endif; ?>
@@ -37,7 +37,7 @@ unset($_SESSION['login_error']);
 <?php else: ?>
   <header class="top">
     <div class="top-in">
-      <a class="logo" href="/">GETWITHIT<b>AI</b></a>
+      <a class="logo" href="/"><img src="/assets/logo.svg" alt="">GetWithItAI<span class="dot">.</span></a>
       <button class="tbtn only-sm" id="menu" type="button">Modules</button>
       <span class="spacer"></span>
       <span class="status hide-sm" id="status"></span>

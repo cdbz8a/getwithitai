@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GetWithItAI · Student portal</title>
+  <meta name="description" content="AI Hero Academy student portal. Eighteen modules, an 18-day practice tracker, and a prompt library. Same course as getwithitai.com.">
+  <meta name="theme-color" content="#0E4F5C">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body>
+  <div id="login" class="login-wrap">
+    <form class="login-card" id="login-form">
+      <a class="logo" href="https://getwithitai.com">
+        <img src="assets/logo.svg" width="36" height="36" alt="">
+        <span>GetWithItAI<span class="dot">.</span></span>
+      </a>
+      <h1>Student portal</h1>
+      <p class="lead">The 18 modules from the site, with practice on your own work.</p>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab on" data-tab="email">Email</button>
+        <button type="button" class="tab" data-tab="code">Access code</button>
+      </div>
+      <div id="pane-email">
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="username" value="demo@getwithitai.com">
+        <label for="pass">Password</label>
+        <input id="pass" type="password" autocomplete="current-password" value="DemoHero123">
+        <button class="btn" type="submit">Sign in</button>
+        <p class="hint">Demo account is filled in. Your progress stays in this browser.</p>
+      </div>
+      <div id="pane-code" class="hidden">
+        <label for="code">Access code</label>
+        <input id="code" type="text" autocomplete="off" placeholder="Code from your instructor">
+        <button class="btn" id="code-btn" type="button">Open the course</button>
+      </div>
+      <p id="login-error" class="error" role="alert"></p>
+      <p class="hint">Questions: <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a></p>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="side" id="side">
+      <a class="logo" href="https://getwithitai.com">
+        <img src="assets/logo.svg" width="32" height="32" alt="">
+        <span>GetWithItAI<span class="dot">.</span></span>
+      </a>
+      <p class="side-kicker">Student portal</p>
+      <div class="progress">
+        <div class="progress-row"><span>Course</span><strong id="prog-label">0 of 18</strong></div>
+        <div class="bar"><i id="prog-bar"></i></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-user">
+        <div>
+          <strong id="who">Student</strong>
+          <span id="who-mail"></span>
+        </div>
+        <button type="button" id="logout" class="text-btn">Sign out</button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <button type="button" class="menu" id="menu" aria-label="Menu">Menu</button>
+        <p id="crumb">Course</p>
+        <a href="https://getwithitai.com" target="_blank" rel="noopener">getwithitai.com</a>
+      </header>
+      <div id="view"></div>
+    </div>
+  </div>
+  <script src="js/portal.js"></script>
+</body>
+</html>

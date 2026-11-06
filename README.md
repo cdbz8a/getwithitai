@@ -4,7 +4,7 @@ Public marketing site and With It newsletter for [getwithitai.com](https://getwi
 
 This repo is the working copy. Edit here, push to GitHub, then deploy the static files to Hostinger `public_html` for getwithitai.com.
 
-**Do not change [getwithitai.net](https://getwithitai.net) from this repo.** That is the separate student portal.
+The student portal for [getwithitai.net](https://getwithitai.net) lives in `portal/`. It uses the same 18 modules as the public course page. The live classroom player is `classroom/`. Do not commit `classroom/private/config.php`.
 
 ## What’s in here
 
