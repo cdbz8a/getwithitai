@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/portal.css?v=4">
+  <link rel="stylesheet" href="css/portal.css?v=5">
 </head>
 <body>
   <div id="login" class="gate">
@@ -35,25 +35,23 @@
       </div>
     </section>
     <section class="gate-panel">
-      <form class="gate-card" id="login-form" action="#">
+      <form class="gate-card" id="login-form" action="#" autocomplete="off" novalidate>
         <h2>Sign in</h2>
-        <p class="hint">The demo account is filled in. Or use the code from your instructor.</p>
+        <p class="hint">Use your email, or the code from class. This opens the 18 modules on this device.</p>
+        <p id="login-error" class="error" role="alert"></p>
         <label for="email">Email</label>
-        <input id="email" type="email" autocomplete="username" value="demo@getwithitai.com" required>
-        <label for="pass">Password</label>
-        <input id="pass" type="password" autocomplete="current-password" value="DemoHero123" required>
-        <button class="btn" type="submit">Sign in</button>
+        <input id="email" name="gwi-email" type="text" inputmode="email" autocomplete="off" value="demo@getwithitai.com">
+        <button class="btn" id="signin" type="button">Enter the course</button>
         <p class="or"><span>or a class code</span></p>
         <label for="code">Access code</label>
-        <input id="code" type="text" autocomplete="off" spellcheck="false" placeholder="Code from your instructor">
+        <input id="code" name="gwi-code" type="text" autocomplete="off" spellcheck="false" placeholder="Code from your instructor">
         <button class="btn line" id="code-btn" type="button">Open with code</button>
-        <p id="login-error" class="error" role="alert"></p>
         <p class="hint">Questions: <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a></p>
       </form>
     </section>
   </div>
 
-  <div id="app" class="app hidden">
+  <div id="app" class="app hidden" hidden>
     <aside class="side" id="side">
       <a class="logo" href="https://getwithitai.com">
         <img src="assets/logo.svg" width="32" height="32" alt="">
@@ -82,6 +80,6 @@
       <div id="view"></div>
     </div>
   </div>
-  <script src="js/portal.js?v=4"></script>
+  <script src="js/portal.js?v=5"></script>
 </body>
 </html>

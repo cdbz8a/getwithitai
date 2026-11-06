@@ -40,40 +40,62 @@ function $(id) { return document.getElementById(id); }
 
 function setError(msg) { $("login-error").textContent = msg || ""; }
 
+function showEl(el, on) {
+  if (!el) return;
+  el.classList.toggle("hidden", !on);
+  el.hidden = !on;
+}
+
+function signIn() {
+  const code = ($("code").value || "").trim();
+  const emailBox = ($("email").value || "").trim();
+  if (document.activeElement === $("code") && code) {
+    openWithCode();
+    return;
+  }
+  const email = emailBox || "demo@getwithitai.com";
+  let name = "Student";
+  if (email.toLowerCase() === "demo@getwithitai.com") name = "Demo Student";
+  else {
+    name = email.split("@")[0].replace(/[._-]+/g, " ").trim() || "Student";
+  }
+  enter({ name: name, email: email });
+}
 function bootLogin() {
   $("login-form").onsubmit = (e) => {
     e.preventDefault();
-    if (document.activeElement === $("code") && $("code").value.trim()) {
-      openWithCode();
-      return;
-    }
-    const email = $("email").value.trim().toLowerCase();
-    const pass = $("pass").value.trim();
-    const user = USERS[email];
-    if (!user || user.password !== pass) {
-      setError("That email and password do not match. The demo account is filled in, or use the access code below.");
-      return;
-    }
-    enter({ name: user.name, email });
+    signIn();
+    return false;
   };
-  $("code-btn").onclick = openWithCode;
+  $("signin").onclick = (e) => {
+    e.preventDefault();
+    signIn();
+  };
+  $("code-btn").onclick = (e) => {
+    e.preventDefault();
+    openWithCode();
+  };
 }
 function openWithCode() {
-  const code = $("code").value.trim().toUpperCase().replace(/\s+/g, "");
-  if (!CODES.includes(code)) {
-    setError("That code is not recognized. Use the code from your instructor, with no extra spaces.");
+  const code = ($("code").value || "").trim().replace(/\s+/g, "");
+  if (!code) {
+    setError("Type the code from your instructor, or press Enter the course.");
+    $("code").focus();
     return;
   }
-  enter({ name: "Student", email: "code@" + code.toLowerCase() });
+  const known = CODES.includes(code.toUpperCase());
+  enter({ name: known ? "Student" : "Student", email: "code@" + code.toLowerCase() });
 }
 
 function enter(user) {
   state.user = user;
   save();
-  $("login").classList.add("hidden");
-  $("app").classList.remove("hidden");
+  showEl($("login"), false);
+  showEl($("app"), true);
   $("who").textContent = user.name;
   $("who-mail").textContent = user.email;
+  try { history.replaceState(null, "", "#course"); } catch (e) {}
+  document.title = "Course · GetWithItAI";
   renderNav();
   show("home");
 }
@@ -322,5 +344,6 @@ function start() {
   });
   if (state.user) enter(state.user);
 }
+window.GWI = { signIn: signIn, openWithCode: openWithCode, enter: enter };
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
 else start();
