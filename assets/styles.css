@@ -434,3 +434,7 @@ label.check input { width: auto; }
 .block-head { padding-bottom: 0.4rem; border-bottom: 2px solid var(--teal); }
 .block-head h3 { color: var(--petrol); font-size: 1.3rem; }
 .block-head p { margin-bottom: 0.2rem; }
+
+/* The GetWithItAI wordmark, as on the Works Desk front page (Sam, 2026-11-19): GetWithIt, then AI in teal. No icon, no dot. */
+.logo, .footer-brand { font-family: "Space Grotesk", Figtree, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+.logo .ai, .footer-brand .ai { color: var(--teal); }

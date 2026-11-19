@@ -23,7 +23,7 @@ unset($_SESSION['login_error']);
 <?php if ($role === null): ?>
   <div class="login">
     <form method="post" action="login.php" autocomplete="off">
-      <a class="logo" href="/"><img src="/assets/logo.svg" alt="">GetWithItAI<span class="dot">.</span></a>
+      <a class="logo" href="/" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
       <h1>Classroom</h1>
       <p>Enter the class code your instructor gave you to follow along with today's session.</p>
       <?php if ($error): ?><p class="err" role="alert"><?= h($error) ?></p><?php endif; ?>
@@ -37,7 +37,7 @@ unset($_SESSION['login_error']);
 <?php else: ?>
   <header class="top">
     <div class="top-in">
-      <a class="logo" href="/"><img src="/assets/logo.svg" alt="">GetWithItAI<span class="dot">.</span></a>
+      <a class="logo" href="/" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
       <button class="tbtn only-sm" id="menu" type="button">Modules</button>
       <span class="spacer"></span>
       <span class="status hide-sm" id="status"></span>

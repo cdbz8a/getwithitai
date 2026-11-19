@@ -89,3 +89,4 @@ pre.prompt { white-space: pre-wrap; word-break: break-word; background: #F0F2F3;
   .top, .nav, .side { display: none !important; }
   .wrap { display: block; }
 }
+.logo .ai { color: #12a594; }
