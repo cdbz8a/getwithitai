@@ -93,3 +93,8 @@ pre.prompt { white-space: pre-wrap; word-break: break-word; background: #E8ECEE;
 
 /* Wordmark is one word: no gap between GetWithIt and AI. */
 .logo { gap: 0; }
+
+/* Scheme 5 "Black and Bold" (Sam, 2026-11-20), same as the main site. */
+:root { --panel2: #F3F3F0; --line: #D6D6D2; --text: #0B0B0C; --soft: #0B0B0C; --dim: #2E3436; --blue: #0B0B0C; }
+.logo { color: #0B0B0C; }
+.tbtn.on { background: #FFD43B; color: #0B0B0C; border-color: #0B0B0C; }

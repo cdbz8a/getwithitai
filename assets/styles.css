@@ -441,3 +441,79 @@ label.check input { width: auto; }
 
 /* Wordmark is one word: no gap between GetWithIt and AI. */
 .logo { gap: 0; }
+
+/* Checklist and quote cards (home page, 2026-11-20) */
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem 2rem; max-width: 960px; }
+.checklist li { position: relative; padding-left: 2rem; margin: 0; font-weight: 600; color: var(--ink); }
+.checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--teal-dark); color: #fff; font-size: 0.85rem; line-height: 1.4rem; text-align: center; }
+.quotes .card p { font-size: 1.12rem; font-weight: 600; color: #fff; margin: 0; }
+@media (max-width: 720px) { .checklist { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Scheme 5 "Black and Bold" (Sam, 2026-11-20: much more contrast,
+   a different scheme altogether). Black and white base, the brand
+   teal kept for the AI in the wordmark and accents, bold yellow for
+   every main button. These rules override the older palette above.
+   ============================================================ */
+:root {
+  --white: #FFFFFF;
+  --ice: #F3F3F0;
+  --petrol: #0B0B0C;
+  --ink: #0B0B0C;
+  --muted: #2E3436;
+  --rule: #D6D6D2;
+  --bubble-ai: #F3F3F0;
+  --teal: #12A594;
+  --teal-dark: #0A7D70;
+  --yellow: #FFD43B;
+  --yellow-dark: #F2C200;
+}
+h1, h2 { color: var(--ink); }
+.lead { color: var(--muted); }
+a { color: var(--teal-dark); }
+a:hover { color: var(--ink); }
+
+.topbar { background: var(--yellow); color: var(--ink); font-weight: 600; }
+.topbar a { color: var(--ink); text-decoration: underline; }
+
+.hero h1 .mark { color: var(--teal); }
+
+.btn-teal { background: var(--yellow); color: var(--ink); box-shadow: 0 6px 0 var(--ink); border: 2px solid var(--ink); }
+.btn-teal:hover { background: var(--yellow-dark); color: var(--ink); }
+.btn-teal:active { box-shadow: 0 2px 0 var(--ink); transform: translateY(4px); }
+.btn-line { border: 2px solid var(--ink); color: var(--ink); }
+.btn-line:hover { background: var(--ink); color: #fff; }
+.nav-links a.active { background: var(--ink); color: #fff; }
+
+section.deep { background: var(--ink); color: #EDEDEA; }
+section.deep .muted, .deep .muted { color: #CFCFCB; }
+.deep .eyebrow { color: var(--yellow); background: rgba(255, 255, 255, 0.08); }
+.eyebrow { color: var(--teal-dark); background: rgba(18, 165, 148, 0.12); }
+.ice .eyebrow { background: rgba(18, 165, 148, 0.16); }
+.deep .card { background: #1A1A1C; border-color: #2E2E31; }
+.deep .badge { background: #1A1A1C; color: #EDEDEA; }
+.stat-num { color: var(--yellow); }
+.source { color: #CFCFCB; }
+.source a { color: #fff; }
+
+.card { border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+.deep .card { box-shadow: none; }
+.card .step { background: var(--ink); color: var(--yellow); }
+.number-card .big-num { color: var(--ink); }
+.price-card.featured { border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--teal); }
+.price-card.featured::before { background: var(--yellow); color: var(--ink); }
+
+.bubble.you { background: var(--ink); color: #fff; }
+.bubble.ai { background: var(--ice); color: var(--ink); border: 1px solid var(--rule); }
+.chat { border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+.chat button.copy:hover { background: var(--yellow); color: var(--ink); }
+
+.checklist li::before { background: var(--teal); color: var(--ink); font-weight: 700; }
+
+footer { background: var(--ink); color: #CFCFCB; }
+footer a { color: #fff; }
+footer a:hover { color: var(--yellow); }
+.footer-bottom { color: #9A9A96; border-top-color: #2E2E31; }
+
+.done-btn.is-done { background: var(--teal); border-color: var(--teal); color: var(--ink); }
+.open-apps a:hover { background: var(--ink); color: #fff; }

@@ -211,3 +211,9 @@ nav button.done { color: var(--teal-dark); }
 
 /* Wordmark is one word: no gap between GetWithIt and AI. */
 .logo { gap: 0; }
+
+/* Scheme 5 "Black and Bold" (Sam, 2026-11-20), same as the main site. */
+:root { --ice: #F3F3F0; --petrol: #0B0B0C; --ink: #0B0B0C; --muted: #2E3436; --rule: #D6D6D2; --bubble: #F3F3F0; --teal-dark: #0A7D70; --ok: #0A7D70; --yellow: #FFD43B; }
+.btn { background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font-weight: 700; }
+.btn:hover { background: #F2C200; color: var(--ink); }
+.btn.line { background: #fff; color: var(--ink); border: 2px solid var(--ink); }
