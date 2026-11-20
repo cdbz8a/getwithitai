@@ -98,3 +98,8 @@ pre.prompt { white-space: pre-wrap; word-break: break-word; background: #E8ECEE;
 :root { --panel2: #F3F3F0; --line: #D6D6D2; --text: #0B0B0C; --soft: #0B0B0C; --dim: #2E3436; --blue: #0B0B0C; }
 .logo { color: #0B0B0C; }
 .tbtn.on { background: #FFD43B; color: #0B0B0C; border-color: #0B0B0C; }
+
+/* Scheme 6 "Deep Green" (Sam, 2026-11-20), same as the main site. */
+:root { --panel2: #E4F4EF; --line: #BFD9D1; --text: #062019; --soft: #062019; --dim: #26403A; --blue: #062019; }
+.logo { color: #062019; }
+.tbtn.on { background: #12A594; color: #062019; border-color: #062019; }

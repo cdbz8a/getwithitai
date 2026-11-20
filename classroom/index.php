@@ -17,7 +17,7 @@ unset($_SESSION['login_error']);
 <title>AI Hero Academy Classroom</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="player.css?v=20261120b">
+<link rel="stylesheet" href="player.css?v=20261120c">
 </head>
 <body>
 <?php if ($role === null): ?>
@@ -62,8 +62,8 @@ unset($_SESSION['login_error']);
     </div>
   </nav>
   <script id="cls" type="application/json"><?= json_encode(['role' => $role, 'csrf' => $csrf], JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
-  <script src="boot.js?v=20261120b"></script>
-  <script src="player.js?v=20261120b"></script>
+  <script src="boot.js?v=20261120c"></script>
+  <script src="player.js?v=20261120c"></script>
 <?php endif; ?>
 </body>
 </html>

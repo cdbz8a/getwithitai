@@ -517,3 +517,38 @@ footer a:hover { color: var(--yellow); }
 
 .done-btn.is-done { background: var(--teal); border-color: var(--teal); color: var(--ink); }
 .open-apps a:hover { background: var(--ink); color: #fff; }
+
+/* ============================================================
+   Scheme 6 "Deep Green" (Sam, 2026-11-20: keep the contrast, no
+   yellow, everything has to match the teal AI). Very dark green in
+   place of black, brand teal buttons with dark text, mint highlights.
+   Overrides Scheme 5 above.
+   ============================================================ */
+:root {
+  --ice: #E4F4EF;
+  --petrol: #062019;
+  --ink: #062019;
+  --muted: #26403A;
+  --rule: #BFD9D1;
+  --bubble-ai: #E4F4EF;
+  --teal: #12A594;
+  --teal-dark: #0A7D70;
+  --yellow: #12A594;      /* old name kept so Scheme 5 rules turn green */
+  --yellow-dark: #0E9283;
+  --mint: #4FE3C6;
+}
+.topbar { background: var(--teal); color: var(--ink); }
+.btn-teal { background: var(--teal); color: var(--ink); }
+.btn-teal:hover { background: var(--mint); color: var(--ink); }
+.deep .eyebrow { color: var(--mint); }
+.stat-num { color: var(--mint); }
+footer a:hover { color: var(--mint); }
+.card .step { background: var(--ink); color: var(--mint); }
+.price-card.featured::before { background: var(--teal); color: var(--ink); }
+.chat button.copy:hover { background: var(--teal); color: var(--ink); }
+.deep .card { background: #0D2E26; border-color: #1E4A3F; }
+.deep .badge { background: #0D2E26; }
+section.deep { color: #E4F4EF; }
+section.deep .muted, .deep .muted, .source { color: #BFD9D1; }
+footer { color: #BFD9D1; }
+.footer-bottom { color: #8FB5AA; border-top-color: #1E4A3F; }

@@ -217,3 +217,7 @@ nav button.done { color: var(--teal-dark); }
 .btn { background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font-weight: 700; }
 .btn:hover { background: #F2C200; color: var(--ink); }
 .btn.line { background: #fff; color: var(--ink); border: 2px solid var(--ink); }
+
+/* Scheme 6 "Deep Green" (Sam, 2026-11-20), same as the main site. */
+:root { --ice: #E4F4EF; --petrol: #062019; --ink: #062019; --muted: #26403A; --rule: #BFD9D1; --bubble: #E4F4EF; --yellow: #12A594; }
+.btn:hover { background: #4FE3C6; color: var(--ink); }
