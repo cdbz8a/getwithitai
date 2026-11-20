@@ -94,12 +94,8 @@ pre.prompt { white-space: pre-wrap; word-break: break-word; background: #E8ECEE;
 /* Wordmark is one word: no gap between GetWithIt and AI. */
 .logo { gap: 0; }
 
-/* Scheme 5 "Black and Bold" (Sam, 2026-11-20), same as the main site. */
-:root { --panel2: #F3F3F0; --line: #D6D6D2; --text: #0B0B0C; --soft: #0B0B0C; --dim: #2E3436; --blue: #0B0B0C; }
-.logo { color: #0B0B0C; }
-.tbtn.on { background: #FFD43B; color: #0B0B0C; border-color: #0B0B0C; }
-
-/* Scheme 6 "Deep Green" (Sam, 2026-11-20), same as the main site. */
-:root { --panel2: #E4F4EF; --line: #BFD9D1; --text: #062019; --soft: #062019; --dim: #26403A; --blue: #062019; }
-.logo { color: #062019; }
-.tbtn.on { background: #12A594; color: #062019; border-color: #062019; }
+/* Scheme 7 "Minimal" (Sam, 2026-11-20), same as the main site. */
+:root { --panel2: #F4FAF8; --line: #E2ECE8; --text: #0A2E26; --soft: #0A2E26; --dim: #4A615B; --blue: #0A2E26; }
+a { color: #0B7F72; }
+.logo { color: #0A2E26; }
+.tbtn.on { background: #0A2E26; color: #fff; border-color: #0A2E26; }

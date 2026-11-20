@@ -450,105 +450,91 @@ label.check input { width: auto; }
 @media (max-width: 720px) { .checklist { grid-template-columns: 1fr; } }
 
 /* ============================================================
-   Scheme 5 "Black and Bold" (Sam, 2026-11-20: much more contrast,
-   a different scheme altogether). Black and white base, the brand
-   teal kept for the AI in the wordmark and accents, bold yellow for
-   every main button. These rules override the older palette above.
+   Scheme 7 "Minimal" (Sam, 2026-11-20: modern minimalist, green
+   that matches the teal AI, no yellow). White space, hairlines,
+   no heavy borders or shadows. Dark green ink, teal as the only
+   accent, a pale mint for alternate sections.
    ============================================================ */
 :root {
   --white: #FFFFFF;
-  --ice: #F3F3F0;
-  --petrol: #0B0B0C;
-  --ink: #0B0B0C;
-  --muted: #2E3436;
-  --rule: #D6D6D2;
-  --bubble-ai: #F3F3F0;
+  --ice: #F4FAF8;
+  --petrol: #0A2E26;
+  --ink: #0A2E26;
+  --muted: #4A615B;
+  --rule: #E2ECE8;
+  --bubble-ai: #F4FAF8;
   --teal: #12A594;
-  --teal-dark: #0A7D70;
-  --yellow: #FFD43B;
-  --yellow-dark: #F2C200;
+  --teal-dark: #0B7F72;
+  --r-lg: 14px;
+  --r-md: 10px;
 }
-h1, h2 { color: var(--ink); }
-.lead { color: var(--muted); }
+body { color: var(--ink); line-height: 1.7; }
+h1, h2, h3 { color: var(--ink); letter-spacing: -0.03em; }
+h1 { font-size: clamp(2.6rem, 6.5vw, 4.6rem); line-height: 1.02; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); line-height: 1.08; max-width: 22ch; }
+h3 { font-weight: 600; }
+.lead { color: var(--muted); font-size: 1.22rem; }
 a { color: var(--teal-dark); }
 a:hover { color: var(--ink); }
 
-.topbar { background: var(--yellow); color: var(--ink); font-weight: 600; }
-.topbar a { color: var(--ink); text-decoration: underline; }
-
+section { padding: 6rem 0; }
+section.ice { background: var(--ice); }
+.hero { padding: 6.5rem 0 6rem; }
 .hero h1 .mark { color: var(--teal); }
 
-.btn-teal { background: var(--yellow); color: var(--ink); box-shadow: 0 6px 0 var(--ink); border: 2px solid var(--ink); }
-.btn-teal:hover { background: var(--yellow-dark); color: var(--ink); }
-.btn-teal:active { box-shadow: 0 2px 0 var(--ink); transform: translateY(4px); }
-.btn-line { border: 2px solid var(--ink); color: var(--ink); }
-.btn-line:hover { background: var(--ink); color: #fff; }
-.nav-links a.active { background: var(--ink); color: #fff; }
+.topbar { background: var(--ink); color: #E8F2EF; font-weight: 500; }
+.topbar a { color: #fff; }
+.site-header { background: rgba(255,255,255,0.94); border-bottom: 1px solid var(--rule); }
+.nav-links a { font-weight: 500; color: var(--muted); }
+.nav-links a:hover { background: transparent; color: var(--ink); }
+.nav-links a.active { background: transparent; color: var(--ink); box-shadow: inset 0 -2px 0 var(--teal); border-radius: 0; }
 
-section.deep { background: var(--ink); color: #EDEDEA; }
-section.deep .muted, .deep .muted { color: #CFCFCB; }
-.deep .eyebrow { color: var(--yellow); background: rgba(255, 255, 255, 0.08); }
-.eyebrow { color: var(--teal-dark); background: rgba(18, 165, 148, 0.12); }
-.ice .eyebrow { background: rgba(18, 165, 148, 0.16); }
-.deep .card { background: #1A1A1C; border-color: #2E2E31; }
-.deep .badge { background: #1A1A1C; color: #EDEDEA; }
-.stat-num { color: var(--yellow); }
-.source { color: #CFCFCB; }
+.btn { font-weight: 600; border-radius: 999px; padding: 0.8rem 1.6rem; box-shadow: none; border: 1px solid transparent; transform: none; }
+.btn-teal, .btn-petrol { background: var(--ink); color: #fff; border-color: var(--ink); box-shadow: none; }
+.btn-teal:hover, .btn-petrol:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+.btn-line { background: transparent; color: var(--ink); border: 1px solid #C9D9D3; }
+.btn-line:hover { background: transparent; border-color: var(--ink); color: var(--ink); }
+
+.eyebrow { background: none; padding: 0; color: var(--teal-dark); font-size: 0.78rem; letter-spacing: 0.14em; font-weight: 600; }
+.ice .eyebrow, .deep .eyebrow { background: none; }
+.badge { background: transparent; border: 1px solid var(--rule); color: var(--muted); font-weight: 500; }
+
+.card { background: #fff; border: 1px solid var(--rule); border-radius: var(--r-lg); box-shadow: none; padding: 1.75rem; }
+.card h3 { color: var(--ink); }
+.card .step { background: transparent; color: var(--teal-dark); border: 1px solid var(--rule); }
+.number-card .big-num { color: var(--teal); font-weight: 600; }
+.price-card .price { color: var(--ink); }
+.price-card.featured { border: 1px solid var(--ink); box-shadow: none; }
+.price-card.featured::before { background: var(--ink); color: #fff; font-weight: 600; }
+
+section.deep { background: var(--ink); color: #DCEAE5; }
+section.deep h2, .deep .card h3 { color: #fff; }
+section.deep .muted, .deep .muted, .source { color: #A9C3BB; }
 .source a { color: #fff; }
+.deep .eyebrow { color: #5FE0C8; }
+.deep .card { background: transparent; border: 1px solid rgba(255,255,255,0.14); box-shadow: none; }
+.deep .badge { border-color: rgba(255,255,255,0.18); color: #DCEAE5; background: transparent; }
+.stat-num { color: #fff; font-weight: 600; }
 
-.card { border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
-.deep .card { box-shadow: none; }
-.card .step { background: var(--ink); color: var(--yellow); }
-.number-card .big-num { color: var(--ink); }
-.price-card.featured { border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--teal); }
-.price-card.featured::before { background: var(--yellow); color: var(--ink); }
-
+.chat { border: 1px solid var(--rule); box-shadow: none; border-radius: 18px; }
+.ice .chat, .deep .chat { box-shadow: none; }
 .bubble.you { background: var(--ink); color: #fff; }
-.bubble.ai { background: var(--ice); color: var(--ink); border: 1px solid var(--rule); }
-.chat { border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
-.chat button.copy:hover { background: var(--yellow); color: var(--ink); }
+.bubble.ai { background: var(--ice); color: var(--ink); border: none; }
+.chat button.copy:hover { background: var(--ink); color: #fff; }
 
-.checklist li::before { background: var(--teal); color: var(--ink); font-weight: 700; }
+details { border: none; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent; padding: 1.1rem 0; margin: 0; }
+summary { font-weight: 600; }
 
-footer { background: var(--ink); color: #CFCFCB; }
-footer a { color: #fff; }
-footer a:hover { color: var(--yellow); }
-.footer-bottom { color: #9A9A96; border-top-color: #2E2E31; }
+.checklist li { font-weight: 500; }
+.checklist li::before { content: ""; width: 0.55rem; height: 0.55rem; top: 0.62rem; left: 0.3rem; background: var(--teal); border-radius: 50%; }
+.quotes .card p { color: #fff; font-weight: 500; font-size: 1.15rem; }
 
-.done-btn.is-done { background: var(--teal); border-color: var(--teal); color: var(--ink); }
+footer { background: #fff; color: var(--muted); border-top: 1px solid var(--rule); }
+footer a { color: var(--ink); }
+footer a:hover { color: var(--teal-dark); }
+.footer-brand { color: var(--ink); }
+.footer-grid strong { color: var(--ink); }
+.footer-bottom { color: var(--muted); border-top-color: var(--rule); }
+
+.done-btn.is-done { background: var(--ink); border-color: var(--ink); color: #fff; }
 .open-apps a:hover { background: var(--ink); color: #fff; }
-
-/* ============================================================
-   Scheme 6 "Deep Green" (Sam, 2026-11-20: keep the contrast, no
-   yellow, everything has to match the teal AI). Very dark green in
-   place of black, brand teal buttons with dark text, mint highlights.
-   Overrides Scheme 5 above.
-   ============================================================ */
-:root {
-  --ice: #E4F4EF;
-  --petrol: #062019;
-  --ink: #062019;
-  --muted: #26403A;
-  --rule: #BFD9D1;
-  --bubble-ai: #E4F4EF;
-  --teal: #12A594;
-  --teal-dark: #0A7D70;
-  --yellow: #12A594;      /* old name kept so Scheme 5 rules turn green */
-  --yellow-dark: #0E9283;
-  --mint: #4FE3C6;
-}
-.topbar { background: var(--teal); color: var(--ink); }
-.btn-teal { background: var(--teal); color: var(--ink); }
-.btn-teal:hover { background: var(--mint); color: var(--ink); }
-.deep .eyebrow { color: var(--mint); }
-.stat-num { color: var(--mint); }
-footer a:hover { color: var(--mint); }
-.card .step { background: var(--ink); color: var(--mint); }
-.price-card.featured::before { background: var(--teal); color: var(--ink); }
-.chat button.copy:hover { background: var(--teal); color: var(--ink); }
-.deep .card { background: #0D2E26; border-color: #1E4A3F; }
-.deep .badge { background: #0D2E26; }
-section.deep { color: #E4F4EF; }
-section.deep .muted, .deep .muted, .source { color: #BFD9D1; }
-footer { color: #BFD9D1; }
-.footer-bottom { color: #8FB5AA; border-top-color: #1E4A3F; }

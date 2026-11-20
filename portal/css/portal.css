@@ -212,12 +212,9 @@ nav button.done { color: var(--teal-dark); }
 /* Wordmark is one word: no gap between GetWithIt and AI. */
 .logo { gap: 0; }
 
-/* Scheme 5 "Black and Bold" (Sam, 2026-11-20), same as the main site. */
-:root { --ice: #F3F3F0; --petrol: #0B0B0C; --ink: #0B0B0C; --muted: #2E3436; --rule: #D6D6D2; --bubble: #F3F3F0; --teal-dark: #0A7D70; --ok: #0A7D70; --yellow: #FFD43B; }
-.btn { background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font-weight: 700; }
-.btn:hover { background: #F2C200; color: var(--ink); }
-.btn.line { background: #fff; color: var(--ink); border: 2px solid var(--ink); }
-
-/* Scheme 6 "Deep Green" (Sam, 2026-11-20), same as the main site. */
-:root { --ice: #E4F4EF; --petrol: #062019; --ink: #062019; --muted: #26403A; --rule: #BFD9D1; --bubble: #E4F4EF; --yellow: #12A594; }
-.btn:hover { background: #4FE3C6; color: var(--ink); }
+/* Scheme 7 "Minimal" (Sam, 2026-11-20), same as the main site. */
+:root { --ice: #F4FAF8; --petrol: #0A2E26; --ink: #0A2E26; --muted: #4A615B; --rule: #E2ECE8; --bubble: #F4FAF8; --teal-dark: #0B7F72; --ok: #0B7F72; }
+.btn { background: var(--ink); color: #fff; border: 1px solid var(--ink); font-weight: 600; box-shadow: none; }
+.btn:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+.btn.line { background: #fff; color: var(--ink); border: 1px solid #C9D9D3; }
+.btn.line:hover { background: #fff; border-color: var(--ink); }
