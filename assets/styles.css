@@ -538,3 +538,11 @@ footer a:hover { color: var(--teal-dark); }
 
 .done-btn.is-done { background: var(--ink); border-color: var(--ink); color: #fff; }
 .open-apps a:hover { background: var(--ink); color: #fff; }
+
+/* Motto band (Sam, 2026-11-20) */
+.motto { text-align: center; padding: 7rem 0; }
+.motto .cta-row { justify-content: center; }
+.motto-line { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.08; letter-spacing: -0.03em; color: #fff; max-width: 20ch; margin: 1rem auto 0; }
+.motto-line span { color: #5FE0C8; }
+.motto .btn-line.inv { border-color: rgba(255,255,255,0.4); color: #fff; }
+.motto .btn-line.inv:hover { border-color: #fff; background: transparent; color: #fff; }
