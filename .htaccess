@@ -12,8 +12,8 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Old newsletter address moves to the new name
-  RewriteRule ^byte-bait(/.*)?$ /with-it$1 [L,R=301]
+  # The newsletter was taken out (Sam, 2026-11-20): old addresses go to the home page
+  RewriteRule ^(byte-bait|with-it)(/.*)?$ / [L,R=301]
 
   # www → apex (canonical is https://getwithitai.com/)
   RewriteCond %{HTTP_HOST} ^www\.getwithitai\.com$ [NC]

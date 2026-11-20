@@ -1,6 +1,6 @@
 # GetWithItAI website
 
-Public marketing site and With It newsletter for [getwithitai.com](https://getwithitai.com).
+Public marketing site for [getwithitai.com](https://getwithitai.com). The With It newsletter was taken out on 2026-11-20 (it is in git history if needed).
 
 This repo is the working copy. Edit here, push to GitHub, then deploy the static files to Hostinger `public_html` for getwithitai.com.
 
@@ -10,9 +10,8 @@ The student portal for [getwithitai.net](https://getwithitai.net) lives in `port
 
 - Root HTML pages: home, learn, course, pricing, register, 404
 - `assets/` — logos, CSS, JS
-- `with-it/` — newsletter (issues, archive, daily)
 - `classroom/` — day-of class player on .com (codes stay out of git)
-- `.htaccess` — HTTPS, www→apex, `/byte-bait/` → `/with-it/`
+- `.htaccess` — HTTPS, www→apex, old newsletter addresses → home page
 
 ## GitHub Pages preview
 

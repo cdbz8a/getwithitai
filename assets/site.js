@@ -106,20 +106,9 @@ function openMail(subject, body) {
     reg.addEventListener("submit", function (e) {
       e.preventDefault();
       var v = function (id) { return document.getElementById(id).value.trim(); };
-      var news = document.getElementById("news");
       var body = "Name: " + v("name") + "\nEmail: " + v("email") + "\nOption: " + v("option") +
-        "\nNewsletter: " + (news && news.checked ? "Yes" : "No") +
         (v("notes") ? "\nNotes: " + v("notes") : "");
       openMail("Registration: " + v("option"), body);
-    });
-  }
-  var nf = document.getElementById("newsform");
-  if (nf) {
-    nf.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var name = document.getElementById("news-name").value.trim();
-      var email = document.getElementById("news-email").value.trim();
-      openMail("Newsletter signup", "Please add me to the GetWithItAI newsletter.\n\nName: " + name + "\nEmail: " + email);
     });
   }
 })();
