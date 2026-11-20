@@ -35,7 +35,7 @@
     },
     {
       "num": 4,
-      "title": "Make it a habit",
+      "title": "Level up and lock it in",
       "modules": [
         15,
         16,
@@ -74,28 +74,28 @@
     },
     {
       "num": 2,
-      "title": "The wake-up call",
+      "title": "Setting it up for you",
       "minutes": 20,
-      "goal": "See the gap between a 1960s chatbot and a current AI app, using the same questions.",
+      "goal": "Set up custom instructions and memory in your main app so it knows your job before you ask.",
       "panels": [
         {
           "t": "talk",
-          "h": "Same question, sixty years apart",
-          "b": "Show a short ELIZA-style reply, then the same question in a current app. Ten minutes is enough.",
+          "h": "Set it once, stop explaining",
+          "b": "Show where instructions and memory live in ChatGPT, Claude, Copilot and Gemini. Two minutes each, no tour.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
-          "t": "try",
-          "h": "Vague, then specific",
-          "b": "Ask one work question with almost no detail, then again with the job, the reader, and the shape you want.",
+          "t": "do",
+          "h": "Write five lines",
+          "b": "Role, readers, preferred format, tone, and one thing to avoid. No private details. Save it in the main app.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "What is the app doing?",
-          "b": "It is writing a new draft. It is not looking up the one true answer.",
+          "h": "Did it change anything?",
+          "b": "Ask the same question as before the setup and compare.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "It predicts a useful next answer from patterns. It can still be wrong."
+          "a": "The answer should fit the job and format without being told again."
         }
       ]
     },
@@ -107,41 +107,41 @@
       "panels": [
         {
           "t": "talk",
-          "h": "Fluent is not the same as right",
-          "b": "Walk through one wrong-but-smooth answer. Point at the sentence that would have gone out unchecked.",
+          "h": "Same question, sixty years apart",
+          "b": "Show a short ELIZA-style reply, then the same question in a current app. Five minutes.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
-          "t": "do",
-          "h": "Stump it on purpose",
-          "b": "Give it an oddly specific request from your field. Watch where it invents.",
+          "t": "try",
+          "h": "Stump the Machine",
+          "b": "The room invents an oddly specific request and watches what the app does with it. Point out where it guesses.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "What do you do with a smooth answer?",
-          "b": "Read it against the source before it leaves your desk.",
+          "h": "What is the app doing?",
+          "b": "It is writing a new draft, not looking up the one true answer.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "Check it. The smoother it sounds, the easier a mistake is to miss."
+          "a": "Predicting likely words, which is why a checking habit matters."
         }
       ]
     },
     {
       "num": 4,
-      "title": "Choosing your tools",
+      "title": "Your tools, inside and out",
       "minutes": 20,
-      "goal": "Pick one main app and one backup that fit how you will use it.",
+      "goal": "Know what each main app is good at, find the one you already have, and pick a main app and a backup.",
       "panels": [
         {
           "t": "talk",
-          "h": "One main app is enough",
-          "b": "Compare ChatGPT, Claude, Gemini, Copilot, and Perplexity in one sentence each. No product tour.",
+          "h": "You may already own it",
+          "b": "Open Copilot in Word or Outlook, or Gemini in Gmail, on screen. Then one sentence each on ChatGPT, Claude and Perplexity.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
           "h": "Choose",
-          "b": "Write the main app and the backup on paper. Say which job each one gets.",
+          "b": "Write the main app and the backup. Say which job each one gets. Use the workplace tool if there is one.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
@@ -155,28 +155,28 @@
     },
     {
       "num": 5,
-      "title": "Memory and context",
+      "title": "Projects and context",
       "minutes": 20,
-      "goal": "Know when a chat has gone stale and it is time to start a new one.",
+      "goal": "Set up one Project, Gem or notebook for a job you do every week.",
       "panels": [
         {
           "t": "talk",
-          "h": "It forgets on purpose",
-          "b": "Show a long thread where the third request fights the first. Then start clean.",
+          "h": "Why it forgets",
+          "b": "A chat has a limited memory. Show a long chat drifting, then a fresh chat inside a Project that already knows the job.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "Reset one chat",
-          "b": "Copy only the facts this job needs into a new conversation. Leave the old thread alone.",
+          "h": "Build one",
+          "b": "Pick a weekly job. Create a Project, Gem or notebook with three lines of instructions and one example.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "What does the app remember?",
-          "b": "Only what is in this chat, unless you saved standing instructions.",
+          "h": "When do you start a fresh chat?",
+          "b": "When the job changes, or a long chat starts drifting.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "This conversation, and any standing instructions you set. Not your whole work history."
+          "a": "Start fresh when the job changes; keep the background in the Project."
         }
       ]
     },
@@ -236,28 +236,28 @@
     },
     {
       "num": 8,
-      "title": "Roles, examples, and templates",
+      "title": "Templates, custom GPTs and Gems",
       "minutes": 20,
-      "goal": "Save one reusable template for a job you do every week.",
+      "goal": "Turn one weekly job into a saved template, custom GPT or Gem.",
       "panels": [
         {
           "t": "talk",
-          "h": "Show, don't describe",
-          "b": "A role plus one real example beats a paragraph of adjectives.",
+          "h": "Show it what good looks like",
+          "b": "Give a role and one example. Compare with the same request without them.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "Save a template",
-          "b": "Blanks for reader, deadline, and facts. Store it where Monday-you will find it.",
+          "h": "Save the weekly job",
+          "b": "Template with blanks, or a custom GPT or Gem. Test it on two real examples.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "What goes in the blank?",
-          "b": "The facts for this week, not a new personality every time.",
+          "h": "Fix once, not every time",
+          "b": "When the output is off, fix the saved instructions.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "This week's facts. The shape stays."
+          "a": "Change the instructions so every future draft improves."
         }
       ]
     },
@@ -290,141 +290,168 @@
     },
     {
       "num": 10,
-      "title": "Email and hard messages",
+      "title": "Email, letters and reports",
       "minutes": 20,
-      "goal": "Draft one real email you have been avoiding, then edit it yourself.",
+      "goal": "Draft one real message you have been avoiding and turn one set of messy notes into a clean summary.",
       "panels": [
         {
           "t": "talk",
-          "h": "The email in drafts",
-          "b": "Pick one real message. Placeholders for names. Four-part prompt. Two edits.",
+          "h": "Your inbox is the practice set",
+          "b": "One hard message and one set of messy notes from the learner's own week.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
           "h": "Before and after",
-          "b": "Show the stiff version and the version you would send. You press send, not the app.",
+          "b": "Draft the message, edit twice, then turn notes into decisions and actions with owners and dates.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "Where do real names go back in?",
-          "b": "On your machine, after the draft is done.",
+          "h": "What about real names?",
+          "b": "Swap them for placeholders in public tools, then put them back yourself.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "After the draft, by you, not inside the public chat."
+          "a": "Placeholders in, real names back only on your own screen."
         }
       ]
     },
     {
       "num": 11,
-      "title": "Minutes, reports, and documents",
+      "title": "Your own files",
       "minutes": 20,
-      "goal": "Turn messy notes into a clean summary with owners and dates.",
+      "goal": "Upload one real document and get a summary, every deadline, and answers you can check.",
       "panels": [
         {
           "t": "talk",
-          "h": "Notes in, minutes out",
-          "b": "Summary, decisions, actions. Missing owners stay missing.",
+          "h": "It reads files now",
+          "b": "Upload a sample PDF on screen. Ask for deadlines and figures with section numbers.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "One real set of notes",
-          "b": "Use today's meeting or an old page of scribbles. Compare against the source.",
+          "h": "Your document",
+          "b": "Learners use a non-confidential document of their own. Summary, every date and figure, least-sure parts.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "Invented owner?",
-          "b": "Send it back. If it was not in the notes, it is not in the minutes.",
+          "h": "Trust or check?",
+          "b": "Check two claims against the source.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "Reject it. Missing stays missing."
+          "a": "Every key date and figure gets matched to the page it came from."
         }
       ]
     },
     {
       "num": 12,
-      "title": "Reading long documents",
+      "title": "Excel, Sheets and numbers",
       "minutes": 20,
-      "goal": "Pull a plain summary and every deadline out of a long document.",
+      "goal": "Clean one messy list and get one working formula you tested yourself.",
       "panels": [
         {
           "t": "talk",
-          "h": "Summary, then quotes",
-          "b": "Ask for deadlines with the sentence they came from. Quotes are easier to check.",
+          "h": "From mess to table",
+          "b": "Paste a messy list and turn it into a clean table on screen.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "One long file",
-          "b": "Public or redacted. Five bullets, every date, two follow-up questions.",
+          "h": "One formula",
+          "b": "Learners describe the formula they need, get it explained, and use it on their own sheet or the sample file.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "Answer not in the file?",
-          "b": "It should say it cannot see that, not guess.",
+          "h": "How do you know it works?",
+          "b": "Test on two known rows.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "Say so. Do not guess."
+          "a": "Check it against rows where you already know the answer."
         }
       ]
     },
     {
       "num": 13,
-      "title": "Spreadsheets and numbers",
+      "title": "Planning and research",
       "minutes": 20,
-      "goal": "Clean a messy list or get one formula you can check.",
+      "goal": "Plan one real project in steps, and research one question with sources you check.",
       "panels": [
         {
           "t": "talk",
-          "h": "A sample, not the whole book",
-          "b": "Ten rows is enough. Hide names and account numbers.",
+          "h": "Plans and sources",
+          "b": "Show a project broken into steps, then a researched answer with clickable sources.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "Test two known rows",
-          "b": "If those are wrong, do not fill the sheet.",
+          "h": "Your plan, your question",
+          "b": "One real job in steps with dates and owners. One question researched with sources.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "When is a formula safe to fill down?",
-          "b": "After you have checked known rows.",
+          "h": "Are the links enough?",
+          "b": "Open at least two.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "After a check you did yourself."
+          "a": "Sources still need opening; a link can say something else."
         }
       ]
     },
     {
       "num": 14,
-      "title": "Meetings and planning",
+      "title": "Images and presentations",
       "minutes": 20,
-      "goal": "Leave with an agenda or a project broken into steps, owners, and dates.",
+      "goal": "Make one image and one short presentation from your own material.",
       "panels": [
         {
           "t": "talk",
-          "h": "Purpose, time, decision",
-          "b": "If you cannot say the decision, you do not have an agenda yet.",
+          "h": "Brief it like a designer",
+          "b": "One image from a vague prompt, then from a proper brief. Then notes to slides in Gamma or Copilot.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "Two weeks, not a vision",
-          "b": "Steps with an owner or a blank, a date, and what done means.",
+          "h": "Yours",
+          "b": "One image for a real notice or post, and a five-slide deck from the learner's own notes.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "Unknown owner?",
-          "b": "Leave it blank.",
+          "h": "Is the deck done?",
+          "b": "Not until every fact is checked and it looks like yours.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "Blank. Do not invent a name."
+          "a": "Check the facts and put it on your own brand before anyone sees it."
         }
       ]
     },
     {
       "num": 15,
+      "title": "Agents for the repeat work",
+      "minutes": 20,
+      "goal": "Hand one repeat task to an agent, and know where a person still has to check.",
+      "panels": [
+        {
+          "t": "talk",
+          "h": "From answers to tasks",
+          "b": "Show an agent doing a short multi-step task on screen. Point out where it asks for approval.",
+          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
+        },
+        {
+          "t": "do",
+          "h": "One repeat task",
+          "b": "Learners write the steps for one weekly job as if training a new hire, then set it up.",
+          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
+        },
+        {
+          "t": "check",
+          "h": "Where does a person stay in?",
+          "b": "Anything sent, paid or published.",
+          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
+          "a": "A person approves anything that leaves the building."
+        }
+      ]
+    },
+    {
+      "num": 16,
       "title": "Checking the output",
       "minutes": 20,
       "goal": "Use a checking routine that matches how much the mistake would cost.",
@@ -451,56 +478,29 @@
       ]
     },
     {
-      "num": 16,
-      "title": "Privacy and workplace rules",
-      "minutes": 20,
-      "goal": "Know what never goes into a public AI tool, and how placeholders work.",
-      "panels": [
-        {
-          "t": "talk",
-          "h": "What stays out",
-          "b": "Passwords, health, kids, ID, banking, and anything marked confidential.",
-          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
-        },
-        {
-          "t": "do",
-          "h": "Placeholder pass",
-          "b": "Rewrite a risky prompt with Person A and Account 1.",
-          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
-        },
-        {
-          "t": "check",
-          "h": "No workplace AI policy yet?",
-          "b": "Use the strict version until there is one.",
-          "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "No secrets, no private files, you check the output."
-        }
-      ]
-    },
-    {
       "num": 17,
-      "title": "Ethics and when to leave AI out",
+      "title": "Privacy, rules and ethics",
       "minutes": 20,
-      "goal": "Decide which jobs you will not hand to an app, and when you tell people AI helped.",
+      "goal": "Know what stays out of public AI tools, how to work safely, and which jobs stay with a person.",
       "panels": [
         {
           "t": "talk",
-          "h": "Some jobs stay human",
-          "b": "Hiring, discipline, and anything you will sign. A draft can help you think. You decide.",
+          "h": "If you wouldn't put it on a postcard",
+          "b": "What stays out, the placeholder method, and the workplace policy.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "do",
-          "h": "One line of credit",
-          "b": "Write the sentence you would actually put on a draft: \"I used an AI tool for the first pass. I checked it.\"",
+          "h": "Placeholders and limits",
+          "b": "Rewrite one real prompt with placeholders. Name one task that stays with a person.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans."
         },
         {
           "t": "check",
-          "h": "Fake quote?",
-          "b": "Never. If they did not say it, it is not a quote.",
+          "h": "When do you say AI helped?",
+          "b": "When a reader would reasonably want to know.",
           "n": "Keep it concrete. Use a learner's real task if they offer one. Do not add slogans.",
-          "a": "Do not invent a person's words."
+          "a": "One plain line is enough; never present it as your own research or someone's quote."
         }
       ]
     },
