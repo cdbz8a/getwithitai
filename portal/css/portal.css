@@ -220,38 +220,77 @@ nav button.done { color: var(--teal-dark); }
 .btn.line:hover { background: #fff; border-color: var(--ink); }
 
 /* ============================================================
-   Portal "Hero" theme (Sam, 2026-11-20): same minimal layout as the
-   main site, but in AI Hero Academy superhero blue and red. The
-   portal logo follows it: GetWithIt in hero blue, AI in hero red.
+   AI Hero Academy theme (Sam, 2026-11-20). Brought back from the
+   Nov 17 portal design on Sam's Desktop (getwithitai-portal):
+   navy band, hero red, gold trim, Oswald capitals, shield badges.
+   Logo stays the wordmark: GetWithIt + AI in hero red.
    ============================================================ */
 :root {
   --white: #FFFFFF;
-  --ice: #EEF3FF;
-  --petrol: #0B1F4D;
-  --ink: #0B1F4D;
-  --muted: #4A5675;
-  --rule: #D8E1F4;
-  --bubble: #EEF3FF;
-  --teal: #1D4ED8;
-  --teal-dark: #1E40AF;
-  --ok: #1E40AF;
-  --hero-blue: #1D4ED8;
-  --hero-red: #DC2626;
-  --hero-red-dark: #B91C1C;
+  --paper: #F6F7F9;
+  --ice: #F6F7F9;
+  --navy: #0B1426;
+  --petrol: #0B1426;
+  --ink: #0B1426;
+  --muted: #46505F;
+  --rule: #DDE1E7;
+  --bubble: #F1F3F6;
+  --red: #C8102E;
+  --red-d: #A00C24;
+  --red-on-navy: #FF3B4E;
+  --tint: #FBEAEC;
+  --gold: #F2B705;
+  --teal: #C8102E;
+  --teal-dark: #A00C24;
+  --ok: #0B1426;
 }
-.logo { color: var(--hero-blue); }
-.logo .ai, .logo .dot { color: var(--hero-red); }
-.mark { color: var(--hero-red); }
-.eyebrow, .kicker { color: var(--hero-blue); }
-a { color: var(--hero-blue); }
-.btn { background: var(--hero-red); border-color: var(--hero-red); color: #fff; }
-.btn:hover { background: var(--hero-red-dark); border-color: var(--hero-red-dark); color: #fff; }
-.btn.line { background: #fff; color: var(--hero-blue); border: 1px solid var(--hero-blue); }
-.btn.line:hover { background: var(--ice); border-color: var(--hero-blue); color: var(--hero-blue); }
-.bubble.you { background: var(--hero-blue); }
-.bar i { background: var(--hero-red); }
-.mod.done .num { background: var(--hero-blue); color: #fff; }
-nav button.done { color: var(--hero-blue); }
-.day.on, .opt:has(input:checked) { border-color: var(--hero-blue); }
-input:focus, textarea:focus { outline-color: var(--hero-blue); }
-.stat strong { color: var(--hero-blue); }
+body { font-family: "Hanken Grotesk", Figtree, system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+h1, h2, h3, .block-h { font-family: "Oswald", "Hanken Grotesk", sans-serif; text-transform: uppercase; letter-spacing: .6px; font-weight: 600; color: var(--ink); }
+a { color: var(--red); }
+
+.logo { font-family: "Space Grotesk", sans-serif; text-transform: none; letter-spacing: -0.01em; color: var(--navy); }
+.logo .ai, .logo .dot { color: var(--red); }
+
+.gate { background: var(--paper); }
+.gate-copy { background: var(--navy); color: #fff; max-width: none; position: relative; overflow: hidden; padding: 2.6rem 3rem 3rem; }
+.gate-copy::before { content: ""; position: absolute; right: -120px; top: 0; bottom: 0; width: 420px; background: repeating-linear-gradient(115deg, transparent 0 38px, rgba(242,183,5,.10) 38px 40px); pointer-events: none; }
+.gate-copy::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: linear-gradient(90deg, var(--red) 0 70%, var(--gold) 70% 100%); }
+.gate-copy > * { position: relative; }
+.gate-copy .logo { color: #fff; }
+.gate-copy .logo .ai { color: var(--red-on-navy); }
+.gate-copy h1 { color: #fff; font-size: clamp(2.2rem, 4.4vw, 3.4rem); line-height: 1.05; }
+.gate-copy .mark { color: var(--gold); }
+.gate-copy .eyebrow { background: none; padding: 0; color: var(--gold); letter-spacing: 1.3px; }
+.gate-copy .lead { color: #C9D1DE; }
+.gate-copy .points li { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); color: #E6EAF1; border-radius: 6px; }
+.gate-copy .points li strong { color: #fff; }
+.gate-copy .chat { border-radius: 8px; }
+.emblem { position: absolute; top: 2.2rem; right: 2.6rem; width: 120px; height: auto; filter: drop-shadow(0 10px 24px rgba(0,0,0,.35)); }
+@media (max-width: 900px) { .emblem { width: 72px; top: 1.4rem; right: 1.4rem; } }
+.gate-card { border-radius: 8px; border-top: 4px solid var(--red); box-shadow: 0 18px 50px rgba(11,20,38,.12); }
+
+.btn { background: var(--red); border: 1px solid var(--red); color: #fff; border-radius: 6px; font-weight: 600; }
+.btn:hover { background: var(--red-d); border-color: var(--red-d); color: #fff; }
+.btn.line { background: #fff; color: var(--navy); border: 1px solid var(--navy); }
+.btn.line:hover { background: var(--paper); color: var(--navy); border-color: var(--navy); }
+input:focus, textarea:focus { outline-color: var(--red); }
+
+.side { background: #fff; }
+.progress { background: var(--paper); border-radius: 6px; }
+.bar i { background: var(--red); }
+nav button { border-radius: 6px; }
+nav button.on, nav button:hover { background: var(--tint); }
+nav button.on { box-shadow: inset 3px 0 0 var(--red); }
+nav button.done { color: var(--navy); }
+.top { border-bottom: 3px solid var(--navy); }
+.kicker, .eyebrow { color: var(--red); }
+.stat, .card, .mod { border-radius: 6px; }
+.stat strong { color: var(--navy); font-family: "Oswald", sans-serif; }
+.mod { border-left: 4px solid var(--red); }
+.mod:hover { background: #fff; box-shadow: 0 8px 20px rgba(11,20,38,.08); }
+.num { width: 40px; height: 46px; display: flex; align-items: center; justify-content: center; background: var(--navy); color: #fff; font-family: "Oswald", sans-serif; border-radius: 0; clip-path: polygon(50% 0, 100% 16%, 100% 62%, 50% 100%, 0 62%, 0 16%); }
+.mod.done .num { background: var(--red); color: #fff; }
+.callout { background: var(--tint); border-left: 4px solid var(--red); border-radius: 6px; }
+.day.on, .opt:has(input:checked) { border-color: var(--red); background: var(--tint); }
+.bubble.you { background: var(--navy); }
+.cert { border-top: 6px solid var(--red); }
