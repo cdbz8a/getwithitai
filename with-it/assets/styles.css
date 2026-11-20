@@ -337,3 +337,10 @@ footer p { color: var(--muted); margin-top: 0.4rem; }
 /* Newsletter issue sections built by publish.py */
 .issue-sec + .issue-sec { margin-top: 2.6rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,.08); }
 .issue-sec > .eyebrow:first-child { margin-bottom: .2rem; }
+
+/* The GetWithItAI wordmark, same as the main site and Works Desk (Sam, 2026-11-19): GetWithIt, then AI in teal. No icon. */
+.logo { font-family: "Space Grotesk", Figtree, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.01em; font-size: 1.3rem; line-height: 1; color: var(--ink); }
+.logo .ai { color: #12a594; }
+
+/* Wordmark is one word: no gap between GetWithIt and AI. */
+.logo { gap: 0; }

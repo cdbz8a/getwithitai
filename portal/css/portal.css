@@ -1,16 +1,16 @@
 /* GetWithItAI student portal. Same daylight palette as getwithitai.com. */
 :root {
   --white: #fff;
-  --ice: #ECF4F2;
-  --petrol: #0E4F5C;
+  --ice: #DDEFEB;
+  --petrol: #06323D;
   --teal: #12A594;
-  --teal-dark: #0D7D71;
-  --ink: #13232A;
-  --muted: #5F6E73;
-  --rule: #DCE6E4;
-  --bubble: #F0F2F3;
+  --teal-dark: #08756A;
+  --ink: #071419;
+  --muted: #3D4B50;
+  --rule: #BCD3CF;
+  --bubble: #E8ECEE;
   --danger: #9c2f2f;
-  --ok: #0D7D71;
+  --ok: #08756A;
   --side: 280px;
 }
 * { box-sizing: border-box; }
@@ -71,7 +71,7 @@ button, input, textarea { font-family: inherit; }
   border: 1px solid var(--rule);
   border-radius: 22px;
   padding: 1.6rem 1.4rem 1.2rem;
-  box-shadow: 0 18px 50px rgba(14,79,92,.12);
+  box-shadow: 0 18px 50px rgba(6, 50, 61,.12);
 }
 .gate-card h2 { font-size: 1.6rem; }
 .or {
@@ -81,7 +81,7 @@ button, input, textarea { font-family: inherit; }
 .or::before, .or::after { content: ""; height: 1px; background: var(--rule); flex: 1; }
 .chat {
   background: #fff; border: 1px solid var(--rule); border-radius: 18px;
-  padding: 1rem 1rem .4rem; box-shadow: 0 14px 40px rgba(14,79,92,.08);
+  padding: 1rem 1rem .4rem; box-shadow: 0 14px 40px rgba(6, 50, 61,.08);
 }
 .chat-title {
   font-size: .75rem; font-weight: 700; letter-spacing: .06em;
@@ -107,10 +107,10 @@ input[type="checkbox"], input[type="radio"] {
 textarea { min-height: 140px; resize: vertical; }
 input:focus, textarea:focus { outline: 2px solid var(--teal); border-color: transparent; }
 .btn {
-  width: 100%; margin-top: 1rem; background: var(--teal); color: #fff;
+  width: 100%; margin-top: 1rem; background: var(--teal-dark); color: #fff;
   padding: .85rem 1rem; font-size: 1rem;
 }
-.btn:hover { background: var(--teal-dark); }
+.btn:hover { background: var(--petrol); }
 .btn.line { background: #fff; color: var(--petrol); border: 1px solid var(--rule); }
 .btn.line:hover { background: var(--ice); }
 .btn.inline { width: auto; margin-top: 0; }
@@ -199,7 +199,7 @@ nav button.done { color: var(--teal-dark); }
   .gate-panel { padding: 1rem 1rem 2rem; }
   .app { grid-template-columns: 1fr; }
   .side { position: fixed; z-index: 20; transform: translateX(-105%); transition: transform .15s; width: min(320px, 88vw); }
-  .side.open { transform: none; box-shadow: 0 0 0 100vmax rgba(19,35,42,.25); }
+  .side.open { transform: none; box-shadow: 0 0 0 100vmax rgba(7, 20, 25,.25); }
   .menu { display: inline-block; }
   .grid, .days { grid-template-columns: 1fr; }
 }
@@ -208,3 +208,6 @@ nav button.done { color: var(--teal-dark); }
   .app { display: block; }
   #view { max-width: none; }
 }
+
+/* Wordmark is one word: no gap between GetWithIt and AI. */
+.logo { gap: 0; }

@@ -1,18 +1,18 @@
-/* GetWithItAI · Design 4 "Daylight Chat"
-   Palette: White #FFFFFF · Ice #ECF4F2 · Petrol #0E4F5C · Teal #12A594 · Teal-dark #0D7D71 · Ink #13232A · Muted #5F6E73
+/* GetWithItAI · Design 4 "Daylight Chat", bolder palette (Sam, 2026-11-19: more contrast, stronger colors)
+   Palette: White #FFFFFF · Ice #DDEFEB · Petrol #06323D · Teal #12A594 · Teal-dark #08756A · Ink #071419 · Muted #3D4B50
    Type: Space Grotesk (display) · Figtree (body)
    Signature: chat-bubble prompt demos */
 
 :root {
   --white: #FFFFFF;
-  --ice: #ECF4F2;
-  --petrol: #0E4F5C;
+  --ice: #DDEFEB;
+  --petrol: #06323D;
   --teal: #12A594;
-  --teal-dark: #0D7D71;
-  --ink: #13232A;
-  --muted: #5F6E73;
-  --rule: #DCE6E4;
-  --bubble-ai: #F0F2F3;
+  --teal-dark: #08756A;
+  --ink: #071419;
+  --muted: #3D4B50;
+  --rule: #BCD3CF;
+  --bubble-ai: #E8ECEE;
   --r-lg: 20px;
   --r-md: 14px;
   --r-pill: 999px;
@@ -59,7 +59,7 @@ li { margin-bottom: 0.4rem; }
 
 /* Header */
 .topbar {
-  background: var(--petrol); color: #DFF0ED;
+  background: var(--petrol); color: #D3EBE6;
   font-size: 0.92rem; padding: 0.5rem 0; text-align: center;
 }
 .topbar a { color: #fff; font-weight: 700; }
@@ -120,10 +120,10 @@ li { margin-bottom: 0.4rem; }
   transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 .btn:active { transform: translateY(1px); }
-.btn-teal { background: var(--teal); color: #fff; box-shadow: 0 6px 18px rgba(18, 165, 148, 0.28); }
-.btn-teal:hover { background: var(--teal-dark); color: #fff; }
+.btn-teal { background: var(--teal-dark); color: #fff; box-shadow: 0 6px 18px rgba(18, 165, 148, 0.28); }
+.btn-teal:hover { background: var(--petrol); color: #fff; }
 .btn-petrol { background: var(--petrol); color: #fff; }
-.btn-petrol:hover { background: #0A3A44; color: #fff; }
+.btn-petrol:hover { background: #03222A; color: #fff; }
 .btn-line { border-color: var(--petrol); color: var(--petrol); background: transparent; }
 .btn-line:hover { background: var(--petrol); color: #fff; }
 .btn-line.inv { border-color: #fff; color: #fff; }
@@ -135,9 +135,9 @@ li { margin-bottom: 0.4rem; }
 /* Sections */
 section { padding: 4rem 0; }
 section.ice { background: var(--ice); }
-section.deep { background: var(--petrol); color: #E6F1EF; }
+section.deep { background: var(--petrol); color: #D3EBE6; }
 section.deep h2 { color: #fff; }
-section.deep .muted { color: #A9C4C0; }
+section.deep .muted { color: #C9DEDA; }
 
 .eyebrow {
   display: inline-block;
@@ -147,7 +147,7 @@ section.deep .muted { color: #A9C4C0; }
   padding: 0.3rem 0.85rem; border-radius: var(--r-pill);
   margin-bottom: 1rem;
 }
-.deep .eyebrow { color: #7FE0D4; background: rgba(255,255,255,0.08); }
+.deep .eyebrow { color: #5FF0DD; background: rgba(255,255,255,0.08); }
 .ice .eyebrow { background: rgba(18, 165, 148, 0.14); }
 
 /* Hero */
@@ -167,10 +167,10 @@ section.deep .muted { color: #A9C4C0; }
   border: 1px solid var(--rule);
   border-radius: var(--r-lg);
   padding: 1.3rem;
-  box-shadow: 0 14px 40px rgba(14, 79, 92, 0.10);
+  box-shadow: 0 14px 40px rgba(6, 50, 61, 0.10);
   max-width: 560px;
 }
-.ice .chat, .deep .chat { box-shadow: 0 14px 40px rgba(14, 79, 92, 0.14); }
+.ice .chat, .deep .chat { box-shadow: 0 14px 40px rgba(6, 50, 61, 0.14); }
 .chat .chat-title {
   font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--muted);
@@ -327,11 +327,11 @@ details p { margin-top: 0.6rem; margin-bottom: 0; color: var(--muted); }
 
 /* Footer */
 footer {
-  background: var(--petrol); color: #B9D2CE;
+  background: var(--petrol); color: #D3E6E2;
   padding: 2.75rem 0 1.75rem; font-size: 0.95rem;
 }
 footer a { color: #fff; text-decoration: none; }
-footer a:hover { color: #7FE0D4; }
+footer a:hover { color: #5FF0DD; }
 .footer-grid {
   display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; margin-bottom: 1.75rem;
 }
@@ -350,7 +350,7 @@ footer a:hover { color: #7FE0D4; }
 .footer-grid a { display: inline-block; margin-bottom: 0.35rem; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.25rem;
-  font-size: 0.85rem; color: #8FB0AB;
+  font-size: 0.85rem; color: #A9C8C3;
 }
 
 /* Helpers */
@@ -360,13 +360,13 @@ footer a:hover { color: #7FE0D4; }
   background: var(--ice); color: var(--petrol);
   padding: 0.35rem 0.9rem; border-radius: var(--r-pill);
 }
-.deep .badge { background: rgba(255,255,255,0.09); color: #DFF0ED; }
+.deep .badge { background: rgba(255,255,255,0.09); color: #D3EBE6; }
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 
 /* ---- 4.1 additions: free lessons, 28/18 cards, course blocks ---- */
-.source { font-size: 0.88rem; color: #A9C4C0; margin-top: 1.5rem; }
-.source a { color: #DFF0ED; }
+.source { font-size: 0.88rem; color: #C9DEDA; margin-top: 1.5rem; }
+.source a { color: #D3EBE6; }
 .small { font-size: 0.9rem; }
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -438,3 +438,6 @@ label.check input { width: auto; }
 /* The GetWithItAI wordmark, as on the Works Desk front page (Sam, 2026-11-19): GetWithIt, then AI in teal. No icon, no dot. */
 .logo, .footer-brand { font-family: "Space Grotesk", Figtree, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.01em; }
 .logo .ai, .footer-brand .ai { color: var(--teal); }
+
+/* Wordmark is one word: no gap between GetWithIt and AI. */
+.logo { gap: 0; }
