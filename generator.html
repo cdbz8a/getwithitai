@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Generator · GetWithItAI</title>
+  <meta name="description" content="Describe the job in plain English. Get a structured prompt you can paste into ChatGPT, Claude, Gemini, Grok, and more." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="canonical" href="https://getwithitai.com/generator.html" />
+  <link rel="icon" href="favicon.ico?v=20261120i" sizes="any" />
+  <link rel="icon" href="assets/logo.svg?v=20261120i" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=20261120i" />
+  <link rel="manifest" href="site.webmanifest?v=20261120i" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GetWithItAI" />
+  <meta property="og:url" content="https://getwithitai.com/generator.html" />
+  <meta property="og:title" content="AI Prompt Generator · GetWithItAI" />
+  <meta property="og:description" content="Describe the job in plain English. Get a structured prompt you can paste into ChatGPT, Claude, Gemini, Grok, and more." />
+  <meta property="og:image" content="https://getwithitai.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://getwithitai.com/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20261120i" />
+  <link rel="stylesheet" href="assets/products.css?v=20261120i" />
+</head>
+<body>
+
+<div class="topbar">Register on this site, then confirm and pay by email. <a href="register.html">Register</a></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Free 28 minutes</a>
+      <a href="course.html">The course</a>
+      <a href="teams.html">Teams</a>
+      <a href="products.html">Products</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+    <a class="btn btn-teal" href="register.html">Book a seat</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Free prompt generator</p>
+      <h1>Describe the job.<br><em>Get a prompt you can paste.</em></h1>
+      <p class="lead">Type what you want in plain English. We add a role, context, limits, and a shape for the answer, tuned to the chat app you’ll paste into.</p>
+      <p class="muted" id="gen-engine-note" style="margin-top:0.75rem">On-page engineer is ready. No signup. Copy into any model.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap gen-stage">
+      <div class="gen-pane">
+        <p class="section-label">You describe</p>
+        <h3>What do you need?</h3>
+        <p class="muted">A blog post, a late-job customer text, a code review, a quote.</p>
+        <div id="gen-models" class="model-row" role="group" aria-label="Target model"></div>
+        <textarea id="gen-input" placeholder="Example: Write a polite reply to a customer whose kitchen install is two days late. Own the delay, offer Saturday morning or Tuesday afternoon, keep it under 110 words, sound like a real contractor."></textarea>
+        <div class="cta-row">
+          <button type="button" class="btn btn-teal" id="gen-go">Generate expert prompt</button>
+        </div>
+      </div>
+      <div class="gen-pane">
+        <p class="section-label">Expert prompt</p>
+        <h3>Paste this into your AI</h3>
+        <p class="muted">Role, context, task, limits, format, and what to check.</p>
+        <div id="gen-out" class="gen-out">Waiting. Describe the job on the left.</div>
+        <div class="score-row">
+          <div class="score-ring" id="gen-score-ring" style="--pct:0%"><span id="gen-score-num">0</span></div>
+          <div class="score-cats" id="gen-score-cats">Score appears after you generate.</div>
+        </div>
+        <div class="cta-row">
+          <button type="button" class="btn btn-gold" id="gen-copy">Copy prompt</button>
+        </div>
+        <div class="refine-row">
+          <input id="gen-refine" type="text" placeholder="Refine: make it shorter, change the tone, add a table" />
+          <button type="button" class="btn btn-ghost" id="gen-refine-go">Refine</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
+    <div class="wrap">
+      <p class="section-label">How it works</p>
+      <h2>Three steps. About a minute.</h2>
+      <div class="grid grid-3" style="margin-top:1rem">
+        <article class="card"><div class="icon">01</div><h3>Describe the job</h3><p class="muted">Plain English. Who it's for, what “done” looks like, anything to avoid.</p></article>
+        <article class="card"><div class="icon">02</div><h3>Get a structured prompt</h3><p class="muted">We assemble a 5-part brief, the same structure taught in AI Hero Academy, tuned to ChatGPT, Claude, Gemini, Grok, Copilot, and more.</p></article>
+        <article class="card"><div class="icon">03</div><h3>Refine, copy, paste</h3><p class="muted">“Make it shorter.” “Sound like me.” Then paste into your chat app. You still check the result before you send it.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-label">Starter jobs</p>
+      <h2>Click a card to start.</h2>
+      <p class="muted" style="margin-bottom:1rem">These seed the generator. Edit them. They are a better first sentence.</p>
+      <div id="gen-templates" class="tpl-grid"></div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg2);border-top:1px solid var(--rule)">
+    <div class="wrap">
+      <p class="section-label">Example</p>
+      <h2>A thin request, then a usable brief</h2>
+      <div class="ba-grid">
+        <div class="ba bad"><span>Typical one-liner</span><p>Write something about my coffee shop.</p></div>
+        <div class="ba good"><span>Engineered</span><p>You are a local-business copywriter. Write a 30-word Instagram caption for opening day, mention free pastries for the first 20, warm tone, no hashtag dump. List assumptions and what to verify.</p></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-ghost" href="score.html">Score a prompt</a>
+        <a class="btn btn-ghost" href="optimize.html">Optimize a prompt</a>
+        <a class="btn btn-teal" href="libraries/index.html">Browse libraries</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>How this generator works</h2>
+      <div class="faq" style="max-width:70ch;margin-top:0.75rem">
+        <details open><summary>Does my text leave the browser?</summary><p>The prompt is built here, in JavaScript. If someone runs the optional local Grok setup (<code>tools/prompt-server.py</code> and an <code>XAI_API_KEY</code>), then the description is sent to xAI’s API to write the prompt. The public GitHub Pages site stays on-page.</p></details>
+        <details><summary>Which models?</summary><p>The output is a prompt you paste into ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, DeepSeek, or Llama. We format the wrapper to match the one you pick.</p></details>
+        <details><summary>Is the score “AI”?</summary><p>The <a href="score.html">scorer</a> is a fixed checklist (role, format, limits, and so on). Same prompt, same number, every time.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+        <p>AI training for everyone who wants to use it at work, at home and everywhere in between. Home of AI Hero Academy.</p>
+      </div>
+      <div>
+        <strong>Site</strong>
+        <a href="index.html">Home</a><br>
+        <a href="learn.html">Free 28 minutes</a><br>
+        <a href="course.html">The course</a><br>
+        <a href="teams.html">Team training</a><br>
+        <a href="products.html">Products</a><br>
+        <a href="pricing.html">Pricing</a><br>
+        <a href="register.html">Register</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a><br>
+        <strong class="mt-1">Students</strong>
+        <a href="https://getwithitai.net" rel="noopener">Student portal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 GetWithItAI</div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261120i"></script>
+<script src="assets/generator.js?v=20261120i"></script>
+</body>
+</html>

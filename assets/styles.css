@@ -546,3 +546,15 @@ footer a:hover { color: var(--teal-dark); }
 .motto-line span { color: #5FE0C8; }
 .motto .btn-line.inv { border-color: rgba(255,255,255,0.4); color: #fff; }
 .motto .btn-line.inv:hover { border-color: #fff; background: transparent; color: #fff; }
+
+/* Product cards are links (products page, 2026-11-20) */
+a.card.product { display: block; text-decoration: none; color: inherit; transition: border-color .15s; }
+a.card.product:hover { border-color: var(--teal); }
+a.card.product h3 { color: var(--ink); }
+
+/* Teams page: software we teach (2026-11-20) */
+.tool-pick { max-width: 66ch; margin-top: 1rem; color: var(--ink); }
+.tool-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-dark); margin: 1.1rem 0 0.5rem; }
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.chips li { margin: 0; padding: 0.35rem 0.8rem; border: 1px solid var(--rule); border-radius: 999px; background: #fff; font-size: 0.9rem; font-weight: 500; color: var(--ink); }
+.card.tool h3 { font-size: 1.35rem; }

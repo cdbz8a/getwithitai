@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Optimizer · GetWithItAI</title>
+  <meta name="description" content="Paste a thin prompt. Get a structured version in your browser." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="canonical" href="https://getwithitai.com/optimize.html" />
+  <link rel="icon" href="favicon.ico?v=20261120i" sizes="any" />
+  <link rel="icon" href="assets/logo.svg?v=20261120i" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=20261120i" />
+  <link rel="manifest" href="site.webmanifest?v=20261120i" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GetWithItAI" />
+  <meta property="og:url" content="https://getwithitai.com/optimize.html" />
+  <meta property="og:title" content="Prompt Optimizer · GetWithItAI" />
+  <meta property="og:description" content="Paste a thin prompt. Get a structured version in your browser." />
+  <meta property="og:image" content="https://getwithitai.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://getwithitai.com/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20261120i" />
+  <link rel="stylesheet" href="assets/products.css?v=20261120i" />
+</head>
+<body>
+
+<div class="topbar">Register on this site, then confirm and pay by email. <a href="register.html">Register</a></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Free 28 minutes</a>
+      <a href="course.html">The course</a>
+      <a href="teams.html">Teams</a>
+      <a href="products.html">Products</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+    <a class="btn btn-teal" href="register.html">Book a seat</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Client-side</p>
+      <h1>Prompt<br><em>optimizer.</em></h1>
+      <p class="lead">Paste a thin prompt. We add a role, a format, and limits in your browser. Read every added line. Delete anything that isn’t true.</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap gen-stage">
+      <div class="gen-pane">
+        <h3>Original</h3>
+        <textarea id="opt-in" placeholder="Write something about my shop."></textarea>
+        <div class="cta-row">
+          <button type="button" class="btn btn-teal" id="opt-go">Improve</button>
+        </div>
+      </div>
+      <div class="gen-pane">
+        <h3>Improved</h3>
+        <div id="opt-out" class="gen-out">Waiting.</div>
+        <div class="score-row">
+          <div class="score-ring" id="opt-ring" style="--pct:0%"><span id="opt-num">0</span></div>
+          <div class="score-cats" id="opt-band">Score after you improve.</div>
+        </div>
+        <div class="cta-row">
+          <button type="button" class="btn btn-gold" id="opt-copy">Copy</button>
+          <a class="btn btn-ghost" href="score.html">Open the scorer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background:var(--bg2);border-top:1px solid var(--rule)">
+    <div class="wrap">
+      <h2>What “Improve” actually does</h2>
+      <p class="muted" style="max-width:58ch;margin-bottom:1rem">It runs the same checklist as the scorer. If a role, format, limit, or example is missing, it adds a generic line. It does not know your pastry special. Read every added line. Delete anything that isn’t true.</p>
+      <div class="faq" style="max-width:70ch">
+        <details open><summary>Does this call an AI API?</summary><p>It is JavaScript in your browser, same as the scorer. GitHub Pages has no prompt-server attached.</p></details>
+        <details><summary>Why is the improved prompt longer?</summary><p>Missing structure got added. Length is not the goal. A 40-word job with a role and a ban can outscore a rambling page.</p></details>
+        <details><summary>Can I still use the generator?</summary><p>Generator builds from a description. Optimizer repairs a prompt you already have. <a href="generator.html">Prompt generator</a> · <a href="score.html">Scorer</a>.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+        <p>AI training for everyone who wants to use it at work, at home and everywhere in between. Home of AI Hero Academy.</p>
+      </div>
+      <div>
+        <strong>Site</strong>
+        <a href="index.html">Home</a><br>
+        <a href="learn.html">Free 28 minutes</a><br>
+        <a href="course.html">The course</a><br>
+        <a href="teams.html">Team training</a><br>
+        <a href="products.html">Products</a><br>
+        <a href="pricing.html">Pricing</a><br>
+        <a href="register.html">Register</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a><br>
+        <strong class="mt-1">Students</strong>
+        <a href="https://getwithitai.net" rel="noopener">Student portal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 GetWithItAI</div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261120i"></script>
+<script src="assets/prompt-score.js?v=20261120i"></script>
+<script>
+(function(){
+  var inn=document.getElementById("opt-in");
+  var out=document.getElementById("opt-out");
+  var last="";
+  function show(text){
+    last=text;
+    out.textContent=text;
+    var s=window.GWIScore.score(text);
+    document.getElementById("opt-num").textContent=s.total;
+    document.getElementById("opt-ring").style.setProperty("--pct", s.total+"%");
+    document.getElementById("opt-band").textContent=window.GWIScore.band(s.total)+" · "+s.total+"/100";
+  }
+  document.getElementById("opt-go").addEventListener("click", function(){
+    show(window.GWIScore.improve(inn.value||""));
+  });
+  document.getElementById("opt-copy").addEventListener("click", function(){
+    if(!last) return;
+    navigator.clipboard.writeText(last);
+  });
+})();
+</script>
+</body>
+</html>

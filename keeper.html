@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Keeper archive · GetWithItAI</title>
+  <meta name="description" content="Community knowledge records stored in this browser on this computer. Export a file to a drive you control." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="canonical" href="https://getwithitai.com/keeper.html" />
+  <link rel="icon" href="favicon.ico?v=20261120i" sizes="any" />
+  <link rel="icon" href="assets/logo.svg?v=20261120i" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=20261120i" />
+  <link rel="manifest" href="site.webmanifest?v=20261120i" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GetWithItAI" />
+  <meta property="og:url" content="https://getwithitai.com/keeper.html" />
+  <meta property="og:title" content="Knowledge Keeper archive · GetWithItAI" />
+  <meta property="og:description" content="Community knowledge records stored in this browser on this computer. Export a file to a drive you control." />
+  <meta property="og:image" content="https://getwithitai.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://getwithitai.com/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20261120i" />
+  <link rel="stylesheet" href="assets/products.css?v=20261120i" />
+</head>
+<body>
+
+<div class="topbar">Register on this site, then confirm and pay by email. <a href="register.html">Register</a></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Free 28 minutes</a>
+      <a href="course.html">The course</a>
+      <a href="teams.html">Teams</a>
+      <a href="products.html">Products</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+    <a class="btn btn-teal" href="register.html">Book a seat</a>
+  </div>
+</header>
+
+<main>
+  <section class="k-gate" id="k-gate">
+    <div class="wrap">
+      <div class="card">
+        <p class="section-label">This computer</p>
+        <h2>The archive is locked for the night.</h2>
+        <p class="muted">Staff in this office share one code. After you unlock, anyone who sits at this desk can use the archive until you lock it again.</p>
+        <label>Shared code</label>
+        <input id="k-door-in" type="password" />
+        <div class="cta-row"><button type="button" class="btn btn-teal" id="k-unlock">Open the archive</button></div>
+      </div>
+    </div>
+  </section>
+  <div id="k-station-wrap">
+  <section class="hero" style="padding-bottom:1.5rem">
+    <div class="wrap">
+      <p class="eyebrow">Knowledge Keeper</p>
+      <h1>The archive.</h1>
+      <p class="lead">This computer holds the records. Anyone in the office can sit down and use it. A record stays here until you mark it to share.</p>
+      <p class="muted" id="k-count" style="margin-top:0.6rem">0 on this station</p>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap keeper-layout">
+      <aside>
+        <input id="k-search" type="search" placeholder="Search this device…" />
+        <div class="cta-row" style="margin:0.6rem 0">
+          <button type="button" class="btn btn-teal btn-sm" id="k-new">New record</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="k-export">Full backup</button>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm" id="k-export-net" style="width:100%;margin-bottom:0.4rem">File for other communities</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="k-export-pub" style="width:100%;margin-bottom:0.4rem">File for the public</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="k-export-enc" style="width:100%;margin-bottom:0.4rem">Encrypted backup</button>
+        <label>Community passphrase (for encrypted files)
+          <input id="k-pass" type="password" autocomplete="new-password" placeholder="Not stored on this page" />
+        </label>
+        <label class="muted" style="font-size:0.78rem">Import a backup or a file from another community
+          <input id="k-import" type="file" accept="application/json,.json" />
+        </label>
+        <div id="k-list" class="keeper-list" style="margin-top:0.75rem"></div>
+      </aside>
+      <div class="card keeper-form">
+        <p class="section-label">Record</p>
+        <label>Title the community will recognize</label>
+        <input id="k-title" type="text" placeholder="e.g. Spring trail plants, as told 2026" />
+        <div class="row2">
+          <div>
+            <label>Knowledge holder (if they want to be named)</label>
+            <input id="k-holder" type="text" />
+          </div>
+          <div>
+            <label>Topic</label>
+            <input id="k-topic" type="text" placeholder="Language, land, work, family, other" />
+          </div>
+        </div>
+        <div class="row2">
+          <div>
+            <label>Language</label>
+            <input id="k-lang" type="text" />
+          </div>
+          <div>
+            <label>Date recorded</label>
+            <input id="k-date" type="date" />
+          </div>
+        </div>
+        <div class="row2">
+          <div>
+            <label>Source</label>
+            <select id="k-source">
+              <option value="oral">Spoken / in someone’s head</option>
+              <option value="paper">Paper / notebook / file</option>
+              <option value="both">Spoken and paper</option>
+            </select>
+          </div>
+          <div>
+            <label>Who may access this</label>
+            <select id="k-access">
+              <option value="protocol">Follow protocol notes below</option>
+              <option value="community">Community may read</option>
+              <option value="family">Family only</option>
+              <option value="restricted">Restricted. Keep in the office.</option>
+            </select>
+          </div>
+        </div>
+        <label>Copies and sharing</label>
+        <select id="k-share">
+          <option value="private">Office only (default). Anyone at this desk.</option>
+          <option value="community">This Nation’s other buildings / USB</option>
+          <option value="network">Trusted other communities</option>
+          <option value="public">Public: poster, website, or handout if they said so</option>
+        </select>
+        <p class="muted" style="font-size:0.8rem;margin-top:0.35rem">New records stay in the office. Family and restricted records stay out of public and community files.</p>
+        <p class="muted" id="k-hash" style="font-size:0.78rem;margin-top:0.35rem">Fingerprint after save</p>
+        <label style="display:flex;gap:0.5rem;align-items:flex-start;margin-top:0.9rem">
+          <input id="k-never" type="checkbox" checked style="width:auto;margin-top:0.25rem" />
+          <span>Never send this record to a public AI tool (ChatGPT, Claude, Gemini, Grok, Copilot, etc.)</span>
+        </label>
+        <label>Spoken teaching / typed transcript</label>
+        <textarea id="k-body" style="min-height:180px" placeholder="Their words. Correct with them. Do not tidy into someone else’s voice."></textarea>
+        <label>Paper original: where it is, what it is, condition</label>
+        <textarea id="k-paper" placeholder="Blue notebook, third shelf in the office. Pages 12–18. Fragile. Original stays here."></textarea>
+        <label>Protocol notes</label>
+        <textarea id="k-protocol" placeholder="Who had to agree before this was written. Seasonal restrictions. Names that must not appear in a public telling."></textarea>
+        <div class="cta-row">
+          <button type="button" class="btn btn-teal" id="k-save">Save on this device</button>
+          <button type="button" class="btn btn-ghost" id="k-print">Print this record</button>
+          <button type="button" class="btn btn-ghost" id="k-delete">Delete from this browser</button>
+        </div>
+        <p class="muted" id="k-status" style="margin-top:0.75rem">This saves on this computer. Keep a copy in another building.</p>
+      </div>
+    </div>
+  </section>
+  <section style="background:var(--bg2);border-top:1px solid var(--rule)">
+    <div class="wrap grid grid-2">
+      <div class="card">
+        <p class="section-label">This computer</p>
+        <h3>Name the office</h3>
+        <label>Community / Nation</label>
+        <input id="k-community" type="text" placeholder="Name you use for yourselves" />
+        <label>This computer</label>
+        <input id="k-station" type="text" placeholder="e.g. Band office front desk" />
+        <div class="cta-row"><button type="button" class="btn btn-ghost btn-sm" id="k-ident">Save the name</button></div>
+        <label>Optional end-of-day code (shared by staff)</label>
+        <input id="k-door-set" type="password" placeholder="Leave blank to stay open during the day" />
+        <div class="cta-row">
+          <button type="button" class="btn btn-ghost btn-sm" id="k-door-save">Save or clear the code</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="k-lock">Lock now</button>
+        </div>
+        <div id="k-health" class="muted" style="margin-top:0.9rem"></div>
+        <div class="cta-row"><button type="button" class="btn btn-ghost btn-sm" id="k-fire">Print fire card</button></div>
+      </div>
+      <div class="card">
+        <p class="section-label">Replicas</p>
+        <h3>Other places a copy lives</h3>
+        <p class="muted">This list is a reminder. You still copy the files to the USB or the other computer.</p>
+        <label>Name</label>
+        <input id="r-name" type="text" placeholder="Health centre USB / sister Nation office" />
+        <label>Kind</label>
+        <select id="r-kind">
+          <option value="usb">USB / drive</option>
+          <option value="building">Another building</option>
+          <option value="community">Another community</option>
+          <option value="sync">Syncthing / shared folder</option>
+          <option value="ipfs">IPFS pin you control</option>
+        </select>
+        <label>Notes</label>
+        <input id="r-notes" type="text" placeholder="Who holds it, which drawer" />
+        <div class="cta-row"><button type="button" class="btn btn-teal btn-sm" id="r-add">Add replica</button></div>
+        <div id="k-replicas" class="grid" style="gap:0.5rem;margin-top:0.85rem"></div>
+      </div>
+    </div>
+  </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html" aria-label="GetWithItAI home">GetWithIt<span class="ai">AI</span></a>
+        <p>AI training for everyone who wants to use it at work, at home and everywhere in between. Home of AI Hero Academy.</p>
+      </div>
+      <div>
+        <strong>Site</strong>
+        <a href="index.html">Home</a><br>
+        <a href="learn.html">Free 28 minutes</a><br>
+        <a href="course.html">The course</a><br>
+        <a href="teams.html">Team training</a><br>
+        <a href="products.html">Products</a><br>
+        <a href="pricing.html">Pricing</a><br>
+        <a href="register.html">Register</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:getwithitai@protonmail.com">getwithitai@protonmail.com</a><br>
+        <strong class="mt-1">Students</strong>
+        <a href="https://getwithitai.net" rel="noopener">Student portal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 GetWithItAI</div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261120i"></script>
+<script src="assets/keeper.js?v=20261120i"></script>
+</body>
+</html>
