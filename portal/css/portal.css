@@ -218,3 +218,40 @@ nav button.done { color: var(--teal-dark); }
 .btn:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
 .btn.line { background: #fff; color: var(--ink); border: 1px solid #C9D9D3; }
 .btn.line:hover { background: #fff; border-color: var(--ink); }
+
+/* ============================================================
+   Portal "Hero" theme (Sam, 2026-11-20): same minimal layout as the
+   main site, but in AI Hero Academy superhero blue and red. The
+   portal logo follows it: GetWithIt in hero blue, AI in hero red.
+   ============================================================ */
+:root {
+  --white: #FFFFFF;
+  --ice: #EEF3FF;
+  --petrol: #0B1F4D;
+  --ink: #0B1F4D;
+  --muted: #4A5675;
+  --rule: #D8E1F4;
+  --bubble: #EEF3FF;
+  --teal: #1D4ED8;
+  --teal-dark: #1E40AF;
+  --ok: #1E40AF;
+  --hero-blue: #1D4ED8;
+  --hero-red: #DC2626;
+  --hero-red-dark: #B91C1C;
+}
+.logo { color: var(--hero-blue); }
+.logo .ai, .logo .dot { color: var(--hero-red); }
+.mark { color: var(--hero-red); }
+.eyebrow, .kicker { color: var(--hero-blue); }
+a { color: var(--hero-blue); }
+.btn { background: var(--hero-red); border-color: var(--hero-red); color: #fff; }
+.btn:hover { background: var(--hero-red-dark); border-color: var(--hero-red-dark); color: #fff; }
+.btn.line { background: #fff; color: var(--hero-blue); border: 1px solid var(--hero-blue); }
+.btn.line:hover { background: var(--ice); border-color: var(--hero-blue); color: var(--hero-blue); }
+.bubble.you { background: var(--hero-blue); }
+.bar i { background: var(--hero-red); }
+.mod.done .num { background: var(--hero-blue); color: #fff; }
+nav button.done { color: var(--hero-blue); }
+.day.on, .opt:has(input:checked) { border-color: var(--hero-blue); }
+input:focus, textarea:focus { outline-color: var(--hero-blue); }
+.stat strong { color: var(--hero-blue); }
